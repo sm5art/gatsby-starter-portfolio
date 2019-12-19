@@ -1,4 +1,4 @@
-# portfolio v2.0
+# gatsby-starter-portfolio
 This repo contains a gatsby app of my current web portfolio w/ a blog section done with CMS.
 
 # Installation
