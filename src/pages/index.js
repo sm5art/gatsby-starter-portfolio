@@ -1,6 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Header from '../components/landing/header';
+import Head from '../components/landing/header';
+import { blue } from '@ant-design/colors';
+
+import { Layout } from 'antd';
+const { Header, Footer, Sider, Content } = Layout;
 
 class BlogIndex extends React.Component {
   render() {
@@ -9,15 +13,27 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <div>
-        <Header/>
-        <Link to={"/blog"}><h3>Blog</h3></Link>
-      </div>
-    )
+      <Layout style={{minHeight:"100vh", background:`${blue[0]}B0` }}>
+        <Header style={{background: "inherit"}}>
+          <Head/>
+        </Header>
+          <Layout style={{background: "inherit"}}>
+            <Content>main content <Link to="/blog">blog</Link></Content>
+          </Layout>
+        <Footer style={{background: "inherit"}}>
+          <footer style={{textAlign: 'center'}}>
+            © {new Date().getFullYear()}, Built with
+            {" "}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            {" and ❤️"}
+          </footer>
+        </Footer>
+      </Layout>
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
