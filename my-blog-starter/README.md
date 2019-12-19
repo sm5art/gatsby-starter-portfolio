@@ -6,6 +6,7 @@ This repo contains a gatsby app of my current web portfolio w/ a blog section do
 2. 
 ```
 $ cd my-blog-starter
+$ npm install -g gatsby-cli
 $ yarn install
 ```
 
@@ -22,6 +23,5 @@ $ gatsby develop
  - logo with triangle and A
 * Work on jumbotron
 
-# 
 
 
