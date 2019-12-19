@@ -1,10 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Header from '../components/landing/header';
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,36 +9,10 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
-      </Layout>
+      <div>
+        <Header/>
+        <Link to={"/blog"}><h3>Blog</h3></Link>
+      </div>
     )
   }
 }

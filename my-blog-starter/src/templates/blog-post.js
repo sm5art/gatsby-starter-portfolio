@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from "../components/blog/bio"
+import Layout from "../components/blog/layout"
+import SEO from "../components/blog/seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -44,9 +44,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
+         
         </article>
 
         <nav>
@@ -75,6 +73,9 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
+        <footer>
+          <Bio />
+        </footer>
       </Layout>
     )
   }
