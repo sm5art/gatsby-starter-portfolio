@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
           <Head/>
         </Header>
           <Layout style={{background: "inherit"}}>
-            <Content style={{marginTop: rhythm(1.5)}}>
+            <Content style={{marginTop: rhythm(3)}}>
               <Jumbotron/>
             </Content>
           </Layout>
