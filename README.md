@@ -19,9 +19,10 @@ $ gatsby develop
 ## production
 
 # TODO
-* work on building top bar of landing section
- - logo with triangle and A
 * Work on jumbotron
 
+
+# Inspecting data of app with GraphiQL
+Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
 
 

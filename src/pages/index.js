@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 import Head from '../components/landing/header';
 import { blue } from '@ant-design/colors';
 
+import { rhythm } from '../utils/typography';
+
 import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -18,7 +20,7 @@ class BlogIndex extends React.Component {
           <Head/>
         </Header>
           <Layout style={{background: "inherit"}}>
-            <Content>main content <Link to="/blog">blog</Link></Content>
+            <Content style={{marginTop: rhythm(1.5)}}>main content <Link to="/blog">blog</Link></Content>
           </Layout>
         <Footer style={{background: "inherit"}}>
           <footer style={{textAlign: 'center'}}>
