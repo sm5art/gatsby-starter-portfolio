@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Head from '../components/landing/header';
+import Jumbotron from '../components/landing/jumbotron';
+
 import { blue } from '@ant-design/colors';
 
 import { rhythm } from '../utils/typography';
@@ -9,6 +11,13 @@ import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 
 class BlogIndex extends React.Component {
+  state = {
+    width: null
+  }
+  componentDidMount() {
+    window.addEventListener("resize", ()=>this.setState({width: window.innerWidth}));
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -20,7 +29,9 @@ class BlogIndex extends React.Component {
           <Head/>
         </Header>
           <Layout style={{background: "inherit"}}>
-            <Content style={{marginTop: rhythm(1.5)}}>main content <Link to="/blog">blog</Link></Content>
+            <Content style={{marginTop: rhythm(1.5)}}>
+              <Jumbotron/>
+            </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>
           <footer style={{textAlign: 'center'}}>

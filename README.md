@@ -19,8 +19,11 @@ $ gatsby develop
 ## production
 
 # TODO
-* Work on jumbotron
-
+* About/Experience pages
+* move jumbotron data to its own section in content
+* make cv button and contact me button functional
+* restyle blog
+* write a blog for genetic pong
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
