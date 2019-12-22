@@ -6,11 +6,13 @@ import { blue } from '@ant-design/colors';
 
 import jumboStyles from "./styles/jumbotron.module.css"
 import { scale } from "../../utils/typography"
+import { sleep, repeat } from '../../utils/promise';
 
 const JUMBOTRON_TEXT_SCALE = 2;
+const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
+const DURATION = 100;
 
-
-const Jumbotron = ({topMessage, bottomMessage}) => (
+const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
     <div className={jumboStyles.jumbotron}>
         <Row>
             <h1 style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
@@ -19,7 +21,7 @@ const Jumbotron = ({topMessage, bottomMessage}) => (
         </Row>
         <Row>
             <h1 id="element" style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
-                {bottomMessage}<span className={jumboStyles.blinker}/>
+                {bottomMessagePrefix}<span style={{color:blue[7]}}>{bottomMessage}</span><span className={jumboStyles.blinker}/>
             </h1>
         </Row>
         <Row>
@@ -28,11 +30,10 @@ const Jumbotron = ({topMessage, bottomMessage}) => (
     </div>
 );
 
-const INITIAL_MESSAGE = "I build software.";
-const DURATION = 100;
 class JumbotronWrapper extends React.Component {
     state = {
-        message: INITIAL_MESSAGE
+        message: PARTS[0], 
+        deleted: false
     }
     constructor(props, context) {
         super(props, context);
@@ -41,34 +42,48 @@ class JumbotronWrapper extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(()=>{
-            this.repeat(this.deleteChar, 10)
-        }, 2000)
+        let promise = Promise.resolve();
+        for(let i = 0; i < PARTS.length-1 ; i++) {
+            promise = promise.then(()=>sleep(1000));
+            promise = promise.then(()=>this.deleteString(PARTS[i]));
+            promise = promise.then(()=>sleep(1000));
+            promise = promise.then(()=>this.typeString(PARTS[i+1]));
+        }
     }
 
-    repeat(func, times) {
-        var promise = Promise.resolve();
-        while (times-- > 0) promise = promise.then(func);
-        return promise;
+    deleteString(stringPart) {
+        return new Promise ((res)=> {
+            repeat(this.deleteChar, stringPart.length).then(res)
+        });
+    }
+
+    typeString(stringPart) {
+        return new Promise ((res)=> {
+            var promise = Promise.resolve();
+            for(let i = 0; i < stringPart.length; i++) {
+                promise = promise.then(()=>this.addChar(stringPart.substring(i, i+1)));
+            }
+            promise = promise.then(res);
+        });
     }
 
     deleteChar() {
         return new Promise ((res) => {
-            setTimeout(()=> {
-                this.setState({message: this.state.message.substring(0, this.state.message.length-1)})
-                res();
-            }
-            , DURATION);
+            sleep(DURATION)
+                .then(()=> {
+                    this.setState({message: this.state.message.substring(0, this.state.message.length-1)})
+                    res();
+                });
         })
     }
 
     addChar (char) {
         return new Promise ((res) => {
-            setTimeout(()=> {
-                this.setState({message: this.state.message+char})
-                res();
-            }
-            , DURATION);
+            sleep(DURATION)
+                .then(()=> {
+                    this.setState({message: this.state.message+char})
+                    res();
+                });
         })
     }
 
@@ -76,6 +91,7 @@ class JumbotronWrapper extends React.Component {
         return (
             <Jumbotron 
                 topMessage={"Hi, i'm Artur."} 
+                bottomMessagePrefix={"I build "}
                 bottomMessage={this.state.message}/>
         );
     }
