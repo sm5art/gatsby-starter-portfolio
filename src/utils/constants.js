@@ -1,3 +1,3 @@
 module.exports = {
-    blogBasePath: 'blogs'
+    blogBasePath: 'blogs',
 };

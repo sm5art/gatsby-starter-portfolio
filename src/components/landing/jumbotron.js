@@ -1,14 +1,13 @@
 import React from "react"
 import { Button, Row, Col } from 'antd';
-import Typed from 'typed.js';
 
-import { blue } from '@ant-design/colors';
-
-import jumboStyles from "./styles/jumbotron.module.css"
-import { scale } from "../../utils/typography"
+import jumboStyles from "./styles/jumbotron.module.css";
+import { scale, rhythm } from "../../utils/typography";
 import { sleep, repeat } from '../../utils/promise';
+import { blue } from '../../utils/colors';
 
-const JUMBOTRON_TEXT_SCALE = 2;
+const JUMBOTRON_TEXT_SCALE = 2.1;
+const BOTTOM_PADDING = 10;
 const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
 const DURATION = 100;
 
@@ -99,7 +98,7 @@ class JumbotronWrapper extends React.Component {
 
 export default () => 
     (
-    <Row type="flex" justify="center">
+    <Row style={{paddingBottom: rhythm(BOTTOM_PADDING)}} type="flex" justify="start">
         <Col>
             <JumbotronWrapper/>
         </Col>

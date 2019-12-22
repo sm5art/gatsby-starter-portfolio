@@ -1,15 +1,15 @@
 import React from "react"
-import { Button, Row, Col, Icon } from 'antd';
+import { Button, Row, Col, Icon, Drawer } from 'antd';
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Image from "gatsby-image";
 
-import { blue } from '@ant-design/colors';
-
 import headerStyles from "./styles/header.module.css"
-import { scale } from "../../utils/typography"
+import { scale, rhythm } from "../../utils/typography"
 import { IS_MOBILE } from '../../utils/mobile'; 
+import { blue } from '../../utils/colors';
 
 const LINK_SCALE = 0.5;
+const MOBILE_DRAWER_RYTHYM = 1.0;
 
 const HeaderLink = ({text, index}) => 
     (
@@ -18,10 +18,12 @@ const HeaderLink = ({text, index}) =>
     </span>
     );
 
-const HeaderLinkHref = ({href, text, index}) => 
+const HeaderLinkHref = ({href, text, index, style}) => 
     (
     <Link to={href}>
+      <span style={style}>
       <HeaderLink text={text} index={index}/>
+      </span>
     </Link>
     );
 
@@ -44,20 +46,59 @@ const Logo = () => {
   )
 }
 
+const CVButton = () =>
+  <Button className={headerStyles.button} type="primary" shape="round" icon="download" size='large'>
+            CV
+  </Button>
+
 const FullWidthHeader = () => (
   <div>
             <HeaderLinkHref index={1} text={"about"}/>
             <HeaderLinkHref index={2} text={"experience"}/>
             <HeaderLinkHref index={3} text={"blog"} href={"/blog"}/>
-            <Button className={headerStyles.button} type="primary" shape="round" icon="download" size='large'>
-        CV
-            </Button>
+            <CVButton/>
     </div>
 );
 
-const HalfWidthHeader = () => (
-  <Icon type="menu" />
-);
+class HalfWidthHeader extends React.Component {
+  state = {
+    visible: false
+  }
+  constructor(props, context) {
+    super(props, context);
+    this.onClose = this.onClose.bind(this);
+  }
+
+  onClose() {
+    this.setState({visible: false});
+  }
+  render() {
+    return (
+      <div>
+        <Icon onClick={()=>this.setState({visible: true})} type="menu" />
+        <Drawer
+              placement="right"
+              closable={false}
+              onClose={this.onClose}
+              visible={this.state.visible}
+            >
+              <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
+               <HeaderLinkHref index={1} text={"about"}/>
+               </Row>
+               <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
+                <HeaderLinkHref index={2} text={"experience"}/>
+                </Row>
+                <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
+                <HeaderLinkHref index={3} text={"blog"} href={"/blog"}/>
+                </Row>
+              <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
+                <CVButton/>
+              </Row>
+            </Drawer>
+      </div>
+  );
+  }
+}
 export default () => 
     (
     <Row type="flex" justify="space-between">

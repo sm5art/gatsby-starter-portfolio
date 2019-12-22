@@ -4,14 +4,14 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/blog/bio"
 import Layout from "../components/blog/layout"
 import SEO from "../components/blog/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
+import { filterPosts } from "../utils/blog";
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
-
+    const posts = filterPosts(data.allMarkdownRemark.edges);
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
