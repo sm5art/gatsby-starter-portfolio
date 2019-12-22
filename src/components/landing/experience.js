@@ -5,9 +5,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import jumboStyles from './styles/jumbotron.module.css';
 
 
-const AboutMe = () => {
-    const data = useStaticQuery(graphql`query AboutMe {
-        markdownRemark(fields: { slug: { regex: "/landing/about/" } }) {
+const Experience = () => {
+    const data = useStaticQuery(graphql`query Experience {
+        markdownRemark(fields: { slug: { regex: "/landing/experience/" } }) {
           id
           excerpt(pruneLength: 160)
           html
@@ -22,4 +22,4 @@ const AboutMe = () => {
 );
 }
 
-export default AboutMe;
+export default Experience;

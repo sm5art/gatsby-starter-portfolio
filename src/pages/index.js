@@ -2,7 +2,9 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Head from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
-import AboutMe from '../components/landing/about';
+import About from '../components/landing/about';
+import Experience from '../components/landing/experience';
+
 
 import { blue } from '@ant-design/colors';
 
@@ -34,7 +36,8 @@ class BlogIndex extends React.Component {
           <Layout style={{background: "inherit"}}>
             <Content style={{marginTop: rhythm(3)}}>
               <Jumbotron/>
-              <AboutMe/>
+              <About/>
+              <Experience/>
             </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>

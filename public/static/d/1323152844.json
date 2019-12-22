@@ -1,0 +1,1 @@
+{"errors":[{"message":"Invalid flags supplied to RegExp constructor 'about'","locations":[{"line":2,"column":3}],"path":["markdownRemark"]}],"data":{"markdownRemark":null}}
