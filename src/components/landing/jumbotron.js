@@ -24,7 +24,7 @@ const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
                 {bottomMessagePrefix}<span style={{color:blue[7]}}>{bottomMessage}</span><span className={jumboStyles.blinker}/>
             </h1>
         </Row>
-        <Row>
+        <Row type="flex" justify="end">
             <Button type="primary">Get in touch</Button>
         </Row>
     </div>

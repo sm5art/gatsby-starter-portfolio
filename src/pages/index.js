@@ -1,34 +1,74 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { Layout } from 'antd';
-import { blue } from '@ant-design/colors';
 
 import { rhythm } from '../utils/typography';
+import {blue, purple, magenta } from '../utils/colors';
 import Head from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
 import Experience from '../components/landing/experience';
-
-const { Header, Footer, Sider, Content } = Layout;
+import indexStyles from './styles/index.module.css';
+import { sleep, repeat } from '../utils/promise';
+const { Header, Footer, Content } = Layout;
 
 
 const HEADER_PADDING = 0.5;
-
+const PAUSE_DURATION = 500;
+const ANIMATION_DURATION = 4000; // duration of animation from css in ms
+const COLORS = [blue[2], purple[2], magenta[2]];
+const N_TIMES = 500;
 class BlogIndex extends React.Component {
   state = {
-    width: null
+    width: null,
+    currentIndex: 0,
+    backgroundColor: COLORS[0]
   }
+  constructor(props, context) {
+    super(props, context);
+    this.rotateBackgroundColor = this.rotateBackgroundColor.bind(this);
+    this.oneRotation = this.oneRotation.bind(this);
+    this.startRotations = this.startRotations.bind(this);
+  }
+
   componentDidMount() {
-    window.addEventListener("resize", ()=>this.setState({width: window.innerWidth}));
+    window.addEventListener("resize", ()=>this.setState({width: window.innerWidth})); // set width in state to cause rerender on resize
+    repeat(this.startRotations, N_TIMES).then(()=>console.log("no more repeating"));
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", ()=>this.setState({width: window.innerWidth}));
+  }
+
+  rotateBackgroundColor() {
+    return new Promise(res => {
+      const nextIndex = this.state.currentIndex+1 >= COLORS.length ? 0:  this.state.currentIndex+1;
+      this.setState({currentIndex: nextIndex, backgroundColor: COLORS[nextIndex]});
+      sleep(ANIMATION_DURATION).then(res);
+    })
+  }
+  
+  oneRotation () {
+    let promise = Promise.resolve();
+    promise = promise.then(()=>sleep(PAUSE_DURATION))
+    promise = promise.then(()=>this.rotateBackgroundColor());
+    return promise;
+  }
+
+  startRotations() {
+    let promise = Promise.resolve();
+    for(let i = 0; i < COLORS.length; i++) {
+      promise = promise.then(()=>this.oneRotation());
+    }
+    return promise;
   }
 
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
     return (
-      <Layout style={{minHeight:"100vh", background:`${blue[0]}B0` }}>
+      //<Layout className={`${indexStyles.container} ${this.state.background}`}>
+      <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
         <Header style={{paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
           <Head/>
         </Header>
@@ -40,7 +80,7 @@ class BlogIndex extends React.Component {
             </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>
-          <footer style={{textAlign: 'center'}}>
+          <footer>
             © {new Date().getFullYear()}, Built with
             {" "}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

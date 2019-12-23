@@ -1,11 +1,13 @@
 .jumbotron {
     padding-left: 4em;
     padding-right: 4em;
+    min-width: 100vw;
 }
 
 .jumbotronMobile {
   padding-left: 1em;
   padding-right: 1em;
+  min-width: 100vw;
 }
 .blinker { 
     animation-name: blinker;

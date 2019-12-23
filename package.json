@@ -31,6 +31,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-transition-group": "^4.3.0",
     "react-typography": "^0.16.19",
     "typed.js": "^2.0.11",
     "typeface-merriweather": "0.0.72",
@@ -58,6 +59,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "local": "gatsby develop -H 0.0.0.0"
   }
 }
