@@ -1,8 +1,12 @@
 .jumbotron {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
+.jumbotronMobile {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 .blinker { 
     animation-name: blinker;
     animation-iteration-count: infinite;

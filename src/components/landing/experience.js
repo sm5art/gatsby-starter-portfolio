@@ -1,9 +1,9 @@
 import React from "react"
-import { Button, Row, Col, Icon, Drawer } from 'antd';
+import { Row, Col, } from 'antd';
 import { useStaticQuery, graphql } from "gatsby";
 
 import jumboStyles from './styles/jumbotron.module.css';
-
+import { IS_MOBILE } from '../../utils/mobile';
 
 const Experience = () => {
     const data = useStaticQuery(graphql`query Experience {
@@ -14,7 +14,7 @@ const Experience = () => {
         }
       }`);
     return (
-    <Row className={jumboStyles.jumbotron} type="flex" justify="center">
+    <Row className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron} type="flex" justify="start">
         <Col>
             <section dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
         </Col>

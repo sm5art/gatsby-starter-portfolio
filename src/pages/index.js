@@ -1,17 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Layout } from 'antd';
+import { blue } from '@ant-design/colors';
+
+import { rhythm } from '../utils/typography';
 import Head from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
 import Experience from '../components/landing/experience';
 
-
-import { blue } from '@ant-design/colors';
-
-import { rhythm } from '../utils/typography';
-
-import { Layout } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
+
 
 const HEADER_PADDING = 0.5;
 
@@ -30,7 +29,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout style={{minHeight:"100vh", background:`${blue[0]}B0` }}>
-        <Header style={{paddingLeft: rhythm(HEADER_PADDING),paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
+        <Header style={{paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
           <Head/>
         </Header>
           <Layout style={{background: "inherit"}}>

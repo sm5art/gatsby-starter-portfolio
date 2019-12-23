@@ -5,6 +5,7 @@ import jumboStyles from "./styles/jumbotron.module.css";
 import { scale, rhythm } from "../../utils/typography";
 import { sleep, repeat } from '../../utils/promise';
 import { blue } from '../../utils/colors';
+import { IS_MOBILE } from '../../utils/mobile';
 
 const JUMBOTRON_TEXT_SCALE = 2.1;
 const BOTTOM_PADDING = 10;
@@ -12,7 +13,7 @@ const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
 const DURATION = 100;
 
 const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
-    <div className={jumboStyles.jumbotron}>
+    <div className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
             <h1 style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
                 {topMessage}
