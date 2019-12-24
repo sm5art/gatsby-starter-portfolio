@@ -7,3 +7,5 @@ would you just look at it
 1. first you need this
 2. second get a college degree
 3. third you need a meme
+
+![Chinese Salty Egg](./wow.png)

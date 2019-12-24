@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { Layout } from 'antd';
 
 import { rhythm } from '../utils/typography';
-import {blue, purple, magenta } from '../utils/colors';
+import {blue, geekblue } from '../utils/colors';
 import Head from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
@@ -14,9 +14,9 @@ const { Header, Footer, Content } = Layout;
 
 
 const HEADER_PADDING = 0.5;
-const PAUSE_DURATION = 500;
-const ANIMATION_DURATION = 4000; // duration of animation from css in ms
-const COLORS = [blue[2], purple[2], magenta[2]];
+const PAUSE_DURATION = 300;
+const ANIMATION_DURATION = 3000; // duration of animation from css in ms
+const COLORS = [blue[1], geekblue[1], blue[2], geekblue[2]];
 const N_TIMES = 500;
 class BlogIndex extends React.Component {
   state = {
@@ -68,7 +68,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
     return (
       //<Layout className={`${indexStyles.container} ${this.state.background}`}>
-      <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
+      <Layout style={{background: this.state.backgroundColor, overflowY:'hidden'}} className={indexStyles.container}>
         <Header style={{paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
           <Head/>
         </Header>

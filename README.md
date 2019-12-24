@@ -19,9 +19,8 @@ $ gatsby develop
 ## production
 
 # TODO
-* About/Experience pages
-* move jumbotron data to its own section in content
 * make cv button and contact me button functional
+* move colors to themes module
 * restyle blog
 * write a blog for genetic pong
 

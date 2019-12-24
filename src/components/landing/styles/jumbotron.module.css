@@ -9,6 +9,7 @@
   padding-right: 1em;
   min-width: 100vw;
 }
+
 .blinker { 
     animation-name: blinker;
     animation-iteration-count: infinite;

@@ -1,7 +1,7 @@
 .container {
     min-height: 100vh;
-    -webkit-transition:background 4s;
-    -moz-transition:background 4s;
-    -o-transition:background 4s;
-    transition:background 4s
+    -webkit-transition:background 3s;
+    -moz-transition:background 3s;
+    -o-transition:background 3s;
+    transition:background 3s
 }

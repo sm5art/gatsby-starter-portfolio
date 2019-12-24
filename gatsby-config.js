@@ -1,3 +1,5 @@
+const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,

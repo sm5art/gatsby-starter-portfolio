@@ -6,11 +6,12 @@ import { scale, rhythm } from "../../utils/typography";
 import { sleep, repeat } from '../../utils/promise';
 import { blue } from '../../utils/colors';
 import { IS_MOBILE } from '../../utils/mobile';
+import constants from '../../utils/constants';
 
 const JUMBOTRON_TEXT_SCALE = 2.1;
 const BOTTOM_PADDING = 10;
-const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
 const DURATION = 100;
+const PARTS = constants.jumbotron.lines;
 
 const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
     <div className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
@@ -90,8 +91,8 @@ class JumbotronWrapper extends React.Component {
     render() {
         return (
             <Jumbotron 
-                topMessage={"Hi, i'm Artur."} 
-                bottomMessagePrefix={"I build "}
+                topMessage={constants.jumbotron.topMessage} 
+                bottomMessagePrefix={constants.jumbotron.bottomMessagePrefix}
                 bottomMessage={this.state.message}/>
         );
     }
