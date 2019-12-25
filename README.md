@@ -38,7 +38,6 @@ Your site will be running at http://localhost:9000
 * global styles are in global.css
 
 # TODO
-* make cv button and contact me button functional
 * restyle blog
 * write a blog for genetic pong
 
