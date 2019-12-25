@@ -2,19 +2,17 @@ import React from "react"
 import { Button, Row, Col } from 'antd';
 
 import jumboStyles from "./styles/jumbotron.module.css";
-import { scale, rhythm } from "../../utils/typography";
+import { scale } from "../../utils/typography";
 import { sleep, repeat } from '../../utils/promise';
-import { blue } from '../../utils/colors';
 import { IS_MOBILE } from '../../utils/mobile';
 import constants from '../../utils/constants';
 
 const JUMBOTRON_TEXT_SCALE = 2.1;
-const BOTTOM_PADDING = 10;
 const DURATION = 100;
 const PARTS = constants.jumbotron.lines;
 
-const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
-    <div className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix,}) => (
+    <div style={{minWidth: "95vw"}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
             <h1 style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
                 {topMessage}
@@ -22,11 +20,11 @@ const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix}) => (
         </Row>
         <Row>
             <h1 id="element" style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
-                {bottomMessagePrefix}<span style={{color:blue[7]}}>{bottomMessage}</span><span className={jumboStyles.blinker}/>
+                {bottomMessagePrefix}<span style={{color: constants.theme.jumbotronTypingColor}}>{bottomMessage}</span><span className={jumboStyles.blinker}/>
             </h1>
         </Row>
         <Row type="flex" justify="end">
-            <Button type="primary">Get in touch</Button>
+            <Button href={`mailto:${constants.contactEmail}`} type="primary">{constants.jumbotron.buttonText}</Button>
         </Row>
     </div>
 );
@@ -100,7 +98,7 @@ class JumbotronWrapper extends React.Component {
 
 export default () => 
     (
-    <Row style={{paddingBottom: rhythm(BOTTOM_PADDING)}} type="flex" justify="start">
+    <Row type="flex" justify="start">
         <Col>
             <JumbotronWrapper/>
         </Col>

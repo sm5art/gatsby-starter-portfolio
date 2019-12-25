@@ -6,7 +6,7 @@ import Image from "gatsby-image";
 import headerStyles from "./styles/header.module.css"
 import { scale, rhythm } from "../../utils/typography"
 import { IS_MOBILE } from '../../utils/mobile'; 
-import { blue } from '../../utils/colors';
+import { theme } from '../../utils/constants';
 
 const LINK_SCALE = 0.5;
 const MOBILE_DRAWER_RYTHYM = 1.0;
@@ -14,7 +14,7 @@ const MOBILE_DRAWER_RYTHYM = 1.0;
 const HeaderLink = ({text, index}) => 
     (
     <span style={{...scale(LINK_SCALE)}} className={headerStyles.link}>
-        <span style={{color: blue[6]}}>{"0"}{index}{". "}</span>{text}
+        <span style={{color: theme.numberColor}}>{"0"}{index}{". "}</span>{text}
     </span>
     );
 
@@ -47,7 +47,7 @@ const Logo = () => {
 }
 
 const CVButton = () =>
-  <Button className={headerStyles.button} type="primary" shape="round" icon="download" size='large'>
+  <Button onClick={()=>window.open('/Resume.pdf')} className={headerStyles.button} type="primary" shape="round" icon="download" size='large'>
             CV
   </Button>
 

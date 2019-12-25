@@ -2,21 +2,22 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { Layout } from 'antd';
 
-import { rhythm } from '../utils/typography';
-import {blue, geekblue } from '../utils/colors';
 import Head from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
+import Blogs from '../components/landing/blogs';
 import Experience from '../components/landing/experience';
 import indexStyles from './styles/index.module.css';
+
+import { rhythm } from '../utils/typography';
+import { theme } from '../utils/constants';
 import { sleep, repeat } from '../utils/promise';
+
 const { Header, Footer, Content } = Layout;
-
-
 const HEADER_PADDING = 0.5;
 const PAUSE_DURATION = 300;
 const ANIMATION_DURATION = 3000; // duration of animation from css in ms
-const COLORS = [blue[1], geekblue[1], blue[2], geekblue[2]];
+const COLORS = theme.shiftingColors;
 const N_TIMES = 500;
 class BlogIndex extends React.Component {
   state = {
@@ -77,6 +78,7 @@ class BlogIndex extends React.Component {
               <Jumbotron/>
               <About/>
               <Experience/>
+              <Blogs/>
             </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>

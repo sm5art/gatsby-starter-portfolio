@@ -6,6 +6,6 @@ export const getDimensions = () => ({
 const isMobile = () => getDimensions().width < 500;
 
 // is mobile function
-export let IS_MOBILE = isMobile();
+export let IS_MOBILE = typeof(window) !== 'undefined' ? isMobile() :  false;
 
-window.addEventListener("resize", ()=>IS_MOBILE=isMobile());
+typeof(window) !== 'undefined' && window.addEventListener("resize", ()=>IS_MOBILE=isMobile());

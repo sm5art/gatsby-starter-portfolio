@@ -1,6 +1,6 @@
 import React from "react"
-import { blue } from '../../utils/colors';
+import { theme } from '../../utils/constants';
 import { rhythm } from '../../utils/typography';
 
 export const SectionNumber = ({number}) =>
-    <h1 style={{color: blue[8], marginRight: rhythm(1) }}>{`0${number}.`}</h1>
+    <h1 style={{color: theme.numberColor, marginRight: rhythm(1) }}>{`0${number}.`}</h1>

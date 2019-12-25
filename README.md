@@ -5,22 +5,40 @@ This repo contains a gatsby app of my current web portfolio w/ a blog section do
 1. Make sure you have Node.js and git installed on current machine
 2. 
 ```
-$ cd my-blog-starter
-$ npm install -g gatsby-cli
-$ yarn install
+cd my-blog-starter
+```
+install gatsby cli
+```
+npm install -g gatsby-cli
+```
+install project dependencies
+```
+yarn install
 ```
 
 # Running
 ## developing
 ```
-$ gatsby develop
+gatsby develop
 ```
+Your site will be running at http://localhost:8000
 
 ## production
+```
+gatsby build
+```
+```
+gatsby serve
+```
+Your site will be running at http://localhost:9000
+
+# Tips
+* src/utils/constants contains most of the constants and all of the themes for the project
+* other constants lie in their respective components (spacings and such)
+* global styles are in global.css
 
 # TODO
 * make cv button and contact me button functional
-* move colors to themes module
 * restyle blog
 * write a blog for genetic pong
 
