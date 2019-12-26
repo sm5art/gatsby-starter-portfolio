@@ -16,14 +16,14 @@ const AboutMe = () => {
         }
       }`);
     return (
-    <Row style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron} type="flex" justify="start">
-        <Col>
+    <div style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+        <Row>
           <SectionNumber number={1}/>
-        </Col>
-        <Col>
+        </Row>
+        <Row>
             <section dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-        </Col>
-    </Row>
+        </Row>
+    </div>
 );
 }
 

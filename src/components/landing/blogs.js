@@ -30,9 +30,9 @@ const Blogs = () => {
       }`);
     const posts = filterPosts(data.allMarkdownRemark.edges);
     return (
-    <Row style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron} type="flex" justify="start">
-        <Col><SectionNumber number={3}/></Col>
-        <Col>
+    <div style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+        <Row><SectionNumber number={3}/></Row>
+        <Row>
             <h1>{"Blogs"}</h1>
             {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -60,8 +60,8 @@ const Blogs = () => {
                     </article>
                 )
             })}
-        </Col>
-    </Row>
+        </Row>
+    </div>
 );
 }
 

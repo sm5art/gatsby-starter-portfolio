@@ -16,12 +16,12 @@ const Experience = () => {
         }
       }`);
     return (
-    <Row style={{ marginTop:rhythm(TOP_MARGIN),}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron} type="flex" justify="start">
-        <Col><SectionNumber number={2}/></Col>
-        <Col>
+    <div style={{ marginTop:rhythm(TOP_MARGIN),}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+        <Row><SectionNumber number={2}/></Row>
+        <Row>
             <section dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-        </Col>
-    </Row>
+        </Row>
+    </div>
 );
 }
 
