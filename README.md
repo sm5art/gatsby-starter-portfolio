@@ -38,7 +38,7 @@ Your site will be running at http://localhost:9000
 * global styles are in global.css
 
 # TODO
-* restyle blog
+* make links on front page scroll to their respective sections
 * write a blog for genetic pong
 
 # Inspecting data of app with GraphiQL

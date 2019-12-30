@@ -3,10 +3,11 @@ import { Link } from "gatsby"
 import { Button } from 'antd';
 
 import { rhythm, scale } from "../../utils/typography"
+import { title, theme } from '../../utils/constants';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -53,6 +54,7 @@ class Layout extends React.Component {
       )
     }
     return (
+      <div style={{minHeight: '100vh', background: theme.blogColor}}>
       <div
         style={{
           marginLeft: `auto`,
@@ -68,6 +70,7 @@ class Layout extends React.Component {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+      </div>
       </div>
     )
   }

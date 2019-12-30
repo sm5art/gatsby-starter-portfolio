@@ -7,10 +7,12 @@ import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
 import Blogs from '../components/landing/blogs';
 import Experience from '../components/landing/experience';
+import SEO from '../components/landing/seo';
+
 import indexStyles from './styles/index.module.css';
 
 import { rhythm } from '../utils/typography';
-import { theme } from '../utils/constants';
+import { theme, author, description } from '../utils/constants';
 import { sleep, repeat } from '../utils/promise';
 
 const { Header, Footer, Content } = Layout;
@@ -69,7 +71,11 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
     return (
       //<Layout className={`${indexStyles.container} ${this.state.background}`}>
-      <Layout style={{background: this.state.backgroundColor, overflowY:'hidden'}} className={indexStyles.container}>
+      <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
+    <SEO
+          title={author}
+          description={description}
+        />
         <Header style={{paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
           <Head/>
         </Header>
