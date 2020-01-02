@@ -27,6 +27,9 @@ class BlogIndex extends React.Component {
     currentIndex: 0,
     backgroundColor: COLORS[0]
   }
+  aboutRef = null
+  experienceRef = null
+  blogsRef = null
   constructor(props, context) {
     super(props, context);
     this.rotateBackgroundColor = this.rotateBackgroundColor.bind(this);
@@ -70,21 +73,20 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
     return (
-      //<Layout className={`${indexStyles.container} ${this.state.background}`}>
       <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
-    <SEO
-          title={author}
-          description={description}
-        />
-        <Header style={{paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
-          <Head/>
+        <SEO
+              title={author}
+              description={description}
+            />
+        <Header style={{position: 'fixed', zIndex: 1, width:'99vw', paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
+          <Head refs={[this.aboutRef, this.experienceRef, this.blogsRef]}/>
         </Header>
           <Layout style={{background: "inherit"}}>
             <Content style={{marginTop: rhythm(3)}}>
               <Jumbotron/>
-              <About/>
-              <Experience/>
-              <Blogs/>
+              <About refCallback={(ref) => this.aboutRef=ref}/>
+              <Experience refCallback={(ref) => this.experienceRef=ref}/>
+              <Blogs refCallback={(ref) => this.blogsRef=ref}/>
             </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>

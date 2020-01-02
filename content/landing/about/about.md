@@ -1,11 +1,9 @@
 # About me
-Hi im artur just a memer out here trying to make it in silicon valley
+Hi! I'm Artur, a software engineer based in **Seattle, WA** who enjoys studying algorithims. I am currently a junior at the **University of Washington** studying Applied Physics. I've had industry experience working as a Python/Javascript engineer and most recently (2019 summer) as a full stack Javascript engineer at **Heali.ai**. I currently work on a tech blog posting digestable algorithim/AI concepts for a demographic of mostly younger people.
 
-would you just look at it
-
-### heres another subtopic hell yea
-1. first you need this
-2. second get a college degree
-3. third you need a meme
-
-![Chinese Salty Egg](./wow.png)
+## Technologies i've been working with
+* Typescript/react/redux
+* serverless (AWS Lambda)
+* Redis
+* MongoDB
+* tensorflow

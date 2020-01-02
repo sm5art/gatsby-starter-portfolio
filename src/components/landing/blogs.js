@@ -8,9 +8,9 @@ import { rhythm } from '../../utils/typography';
 import { filterPosts } from "../../utils/blog";
 import { SectionNumber } from './common';
 
-const TOP_MARGIN = 10;
+const TOP_MARGIN = 7;
 
-const Blogs = () => {
+const Blogs = ({refCallback}) => {
     const data = useStaticQuery(graphql`query Blogs {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
@@ -30,7 +30,7 @@ const Blogs = () => {
       }`);
     const posts = filterPosts(data.allMarkdownRemark.edges);
     return (
-    <div style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+    <div ref={refCallback} style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row><SectionNumber number={3}/></Row>
         <Row>
             <h1>{"Blogs"}</h1>

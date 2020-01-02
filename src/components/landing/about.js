@@ -6,8 +6,10 @@ import jumboStyles from './styles/jumbotron.module.css';
 import { IS_MOBILE } from '../../utils/mobile';
 import { rhythm } from '../../utils/typography';
 import { SectionNumber } from './common';
-const TOP_MARGIN = 10;
-const AboutMe = () => {
+
+const TOP_MARGIN = 7;
+
+const AboutMe = ({refCallback}) => {
     const data = useStaticQuery(graphql`query AboutMe {
         markdownRemark(fields: { slug: { regex: "/landing/about/" } }) {
           id
@@ -16,7 +18,7 @@ const AboutMe = () => {
         }
       }`);
     return (
-    <div style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+    <div ref={refCallback} style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
           <SectionNumber number={1}/>
         </Row>

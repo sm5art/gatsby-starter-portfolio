@@ -38,9 +38,7 @@ Your site will be running at http://localhost:9000
 * global styles are in global.css
 
 # TODO
-* make links on front page scroll to their respective sections
 * look at comma.ai for inspiration on how to change header/jumbotron
-* make header absolute
 * write a blog for genetic pong
 
 # Inspecting data of app with GraphiQL

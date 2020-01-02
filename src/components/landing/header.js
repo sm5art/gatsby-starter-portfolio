@@ -7,24 +7,25 @@ import headerStyles from "./styles/header.module.css"
 import { scale, rhythm } from "../../utils/typography"
 import { IS_MOBILE } from '../../utils/mobile'; 
 import { theme } from '../../utils/constants';
+import { sleep } from "../../utils/promise";
 
 const LINK_SCALE = 0.5;
 const MOBILE_DRAWER_RYTHYM = 1.0;
+const DRAWER_WAIT_DURATION = 250;
+const SCROLL_OFFSET = -80;
+const LOGO_SPACING = 0.5;
+// link needs to scroll to a certain ref
 
-const HeaderLink = ({text, index}) => 
+const HeaderLink = ({text, index, reference, extraFunc }) => 
     (
-    <span style={{...scale(LINK_SCALE)}} className={headerStyles.link}>
+    <a onClick={reference ? () => {
+      if(extraFunc) extraFunc().then(()=>window.scrollTo(0, reference.offsetTop+SCROLL_OFFSET)) 
+      else { window.scrollTo(0, reference.offsetTop+SCROLL_OFFSET) }
+      } : null } 
+      style={{...scale(LINK_SCALE)}} 
+      className={headerStyles.link}>
         <span style={{color: theme.numberColor}}>{"0"}{index}{". "}</span>{text}
-    </span>
-    );
-
-const HeaderLinkHref = ({href, text, index, style}) => 
-    (
-    <Link to={href}>
-      <span style={style}>
-      <HeaderLink text={text} index={index}/>
-      </span>
-    </Link>
+    </a>
     );
 
 const Logo = () => {
@@ -41,6 +42,7 @@ const Logo = () => {
   `);
   return (
     <Image
+        style={{marginTop: rhythm(LOGO_SPACING)}}
         fixed={data.avatar.childImageSharp.fixed}
      />
   )
@@ -51,14 +53,16 @@ const CVButton = () =>
             CV
   </Button>
 
-const FullWidthHeader = () => (
+const FullWidthHeader = ({refs}) => {
+  return (
   <div>
-            <HeaderLinkHref index={1} text={"about"}/>
-            <HeaderLinkHref index={2} text={"experience"}/>
-            <HeaderLinkHref index={3} text={"blog"} href={"/blog"}/>
+            <HeaderLink reference={refs[0]} index={1} text={"about"}/>
+            <HeaderLink reference={refs[1]} index={2} text={"experience"}/>
+            <HeaderLink reference={refs[2]} index={3} text={"blog"}/>
             <CVButton/>
     </div>
 );
+  }
 
 class HalfWidthHeader extends React.Component {
   state = {
@@ -67,12 +71,22 @@ class HalfWidthHeader extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.onClose = this.onClose.bind(this);
+    this.extra = this.extra.bind(this);
   }
 
   onClose() {
     this.setState({visible: false});
   }
+
+  extra () {
+    return new Promise ((res) => {
+      this.setState({visible: !this.state.visible});
+      sleep(DRAWER_WAIT_DURATION).then( ()=>{ res()})
+    });
+  }
+
   render() {
+    const { refs } = this.props;
     return (
       <div>
         <Icon onClick={()=>this.setState({visible: true})} type="menu" />
@@ -83,13 +97,13 @@ class HalfWidthHeader extends React.Component {
               visible={this.state.visible}
             >
               <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
-               <HeaderLinkHref index={1} text={"about"}/>
+               <HeaderLink extraFunc={this.extra} reference={refs[0]} index={1} text={"about"}/>
                </Row>
                <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
-                <HeaderLinkHref index={2} text={"experience"}/>
+                <HeaderLink extraFunc={this.extra} reference={refs[1]} index={2} text={"experience"}/>
                 </Row>
                 <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
-                <HeaderLinkHref index={3} text={"blog"} href={"/blog"}/>
+                <HeaderLink extraFunc={this.extra} reference={refs[2]} index={3} text={"blog"}/>
                 </Row>
               <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
                 <CVButton/>
@@ -99,10 +113,12 @@ class HalfWidthHeader extends React.Component {
   );
   }
 }
-export default () => 
+
+//refs is a list of references to the divs containing About, Experience, and blog sections
+export default ({refs}) => 
     (
     <Row type="flex" justify="space-between">
         <Col><Logo/></Col>
-        <Col>{IS_MOBILE ? <HalfWidthHeader/>:  <FullWidthHeader/> }</Col>
+        <Col>{IS_MOBILE ? <HalfWidthHeader refs={refs}/>:  <FullWidthHeader refs={refs}/> }</Col>
     </Row>
     );

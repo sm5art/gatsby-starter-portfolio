@@ -2,7 +2,7 @@ import React from "react"
 import { Button, Row, Col } from 'antd';
 
 import jumboStyles from "./styles/jumbotron.module.css";
-import { scale } from "../../utils/typography";
+import { scale, rhythm } from "../../utils/typography";
 import { sleep, repeat } from '../../utils/promise';
 import { IS_MOBILE } from '../../utils/mobile';
 import constants from '../../utils/constants';
@@ -10,9 +10,10 @@ import constants from '../../utils/constants';
 const JUMBOTRON_TEXT_SCALE = 2.1;
 const DURATION = 100;
 const PARTS = constants.jumbotron.lines;
+const JUMBOTRON_RHYTHM = 2;
 
 const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix,}) => (
-    <div style={{minWidth: "95vw"}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+    <div style={{minWidth: "95vw", paddingTop: rhythm(JUMBOTRON_RHYTHM)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
             <h1 style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
                 {topMessage}
