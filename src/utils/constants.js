@@ -9,7 +9,7 @@ module.exports = {
         buttonText: "Get in touch"
     },
     theme: {
-        shiftingColors: [colors.blue[2], colors.geekblue[2], colors.blue[3], colors.geekblue[3]],
+        shiftingColors: [colors.volcano[2], colors.orange[2], colors.volcano[3], colors.lime[3]],
         jumbotronTypingColor: colors.blue[7],
         numberColor: colors.blue[7],
         blogColor: colors.geekblue[3]

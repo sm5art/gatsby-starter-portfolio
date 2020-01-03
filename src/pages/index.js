@@ -17,8 +17,8 @@ import { sleep, repeat } from '../utils/promise';
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
-const PAUSE_DURATION = 300;
-const ANIMATION_DURATION = 3000; // duration of animation from css in ms
+const PAUSE_DURATION = 1000;
+const ANIMATION_DURATION = 6000; // duration of animation from css in ms
 const COLORS = theme.shiftingColors;
 const N_TIMES = 500;
 class BlogIndex extends React.Component {
