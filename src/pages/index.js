@@ -17,6 +17,7 @@ import { sleep, repeat } from '../utils/promise';
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
+const CONTENT_MAX_WIDTH = 32;
 const PAUSE_DURATION = 1000;
 const ANIMATION_DURATION = 6000; // duration of animation from css in ms
 const COLORS = theme.shiftingColors;
@@ -82,7 +83,7 @@ class BlogIndex extends React.Component {
           <Head refs={[this.aboutRef, this.experienceRef, this.blogsRef]}/>
         </Header>
           <Layout style={{background: "inherit"}}>
-            <Content style={{marginTop: rhythm(3)}}>
+            <Content style={{marginTop: rhythm(3), marginLeft:'auto', marginRight:'auto', maxWidth: rhythm(CONTENT_MAX_WIDTH)}}>
               <Jumbotron/>
               <About refCallback={(ref) => this.aboutRef=ref}/>
               <Experience refCallback={(ref) => this.experienceRef=ref}/>
