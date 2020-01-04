@@ -38,8 +38,8 @@ Your site will be running at http://localhost:9000
 * global styles are in global.css
 
 # TODO
-* look at comma.ai for inspiration on how to change header/jumbotron
 * write a blog for genetic pong
+* make readme more presentable
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
