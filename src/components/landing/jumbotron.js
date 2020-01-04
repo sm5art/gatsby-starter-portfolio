@@ -13,7 +13,7 @@ const PARTS = constants.jumbotron.lines;
 const JUMBOTRON_RHYTHM = 2;
 
 const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix,}) => (
-    <div style={{minWidth: "95vw", paddingTop: rhythm(JUMBOTRON_RHYTHM)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
+    <div style={{paddingTop: rhythm(JUMBOTRON_RHYTHM)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
             <h1 style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
                 {topMessage}
