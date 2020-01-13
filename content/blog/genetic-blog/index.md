@@ -1,5 +1,5 @@
 ---
-title: Genetic Algorithims
+title: Playing Pong Unsupervised with Genetic Algorithims 🧬
 date: "2020-01-04T22:40:32.169Z"
 description: "Building an unsupervised genetic learning algorithim for video games in python (pong)."
 ---

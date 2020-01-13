@@ -5,6 +5,8 @@ import { Button } from 'antd';
 import { rhythm, scale } from "../../utils/typography"
 import { title, theme } from '../../utils/constants';
 
+const BLOG_LAYOUT_WIDTH = 32;
+
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props
@@ -59,7 +61,7 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(BLOG_LAYOUT_WIDTH),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

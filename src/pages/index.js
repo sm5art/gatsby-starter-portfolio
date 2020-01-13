@@ -17,7 +17,8 @@ import { sleep, repeat } from '../utils/promise';
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
-const CONTENT_MAX_WIDTH = 32;
+const CONTENT_MAX_WIDTH = 38;
+const SCROLL_OFFSET = -80;
 const PAUSE_DURATION = 1000;
 const ANIMATION_DURATION = 6000; // duration of animation from css in ms
 const COLORS = theme.shiftingColors;
@@ -36,14 +37,18 @@ class BlogIndex extends React.Component {
     this.rotateBackgroundColor = this.rotateBackgroundColor.bind(this);
     this.oneRotation = this.oneRotation.bind(this);
     this.startRotations = this.startRotations.bind(this);
+    this.initKeyPressLogic = this.initKeyPressLogic.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener("resize", ()=>this.setState({width: window.innerWidth})); // set width in state to cause rerender on resize
     repeat(this.startRotations, N_TIMES).then(()=>console.log("no more repeating"));
+    this.initKeyPressLogic();
   }
+
   componentWillUnmount() {
     window.removeEventListener("resize", ()=>this.setState({width: window.innerWidth}));
+    document.removeEventListener('keypress', this.func);
   }
 
   rotateBackgroundColor() {
@@ -67,6 +72,21 @@ class BlogIndex extends React.Component {
       promise = promise.then(()=>this.oneRotation());
     }
     return promise;
+  }
+
+  initKeyPressLogic (){
+      this.func = (event) => {
+        if (event.keyCode == '1'.charCodeAt(0)) {
+          window.scrollTo(0, this.aboutRef.offsetTop+SCROLL_OFFSET);
+        }
+        else if (event.keyCode == '2'.charCodeAt(0)) {
+          window.scrollTo(0, this.experienceRef.offsetTop+SCROLL_OFFSET);
+        }
+        else if (event.keyCode == '3'.charCodeAt(0)) {
+          window.scrollTo(0, this.blogsRef.offsetTop+SCROLL_OFFSET);
+        }
+    };
+    document.addEventListener("keypress", this.func)
   }
 
   render() {
