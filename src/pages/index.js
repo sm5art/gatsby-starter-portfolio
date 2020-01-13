@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { Layout } from 'antd';
 
-import Head from '../components/landing/header';
+import Head, { SCROLL_OFFSET } from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
 import Blogs from '../components/landing/blogs';
@@ -17,8 +17,7 @@ import { sleep, repeat } from '../utils/promise';
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
-const CONTENT_MAX_WIDTH = 38;
-const SCROLL_OFFSET = -80;
+const CONTENT_MAX_WIDTH = 32;
 const PAUSE_DURATION = 1000;
 const ANIMATION_DURATION = 6000; // duration of animation from css in ms
 const COLORS = theme.shiftingColors;

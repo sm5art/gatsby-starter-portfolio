@@ -5,7 +5,7 @@ import { Button } from 'antd';
 import { rhythm, scale } from "../../utils/typography"
 import { title, theme } from '../../utils/constants';
 
-const BLOG_LAYOUT_WIDTH = 32;
+const BLOG_LAYOUT_WIDTH = 24;
 
 class Layout extends React.Component {
   render() {

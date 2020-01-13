@@ -12,7 +12,7 @@ import { sleep } from "../../utils/promise";
 const LINK_SCALE = 0.5;
 const MOBILE_DRAWER_RYTHYM = 1.0;
 const DRAWER_WAIT_DURATION = 250;
-const SCROLL_OFFSET = -80;
+export const SCROLL_OFFSET = -80;
 const LOGO_SPACING = 0.5;
 // link needs to scroll to a certain ref
 
