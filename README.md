@@ -41,6 +41,7 @@ Your site will be running at http://localhost:9000
 * write a blog for genetic pong
 * make readme more presentable
 * make the top text in jumbotron animate in
+* alternate the colors between about, experience, blogs (see antdesign site)
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 

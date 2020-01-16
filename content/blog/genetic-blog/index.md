@@ -27,4 +27,3 @@ The outputs for **the problem** is the pong paddle's direction of action.
 0 for neutral
 -1 for going down
 ```
-
