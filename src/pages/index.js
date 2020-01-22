@@ -76,13 +76,13 @@ class BlogIndex extends React.Component {
   initKeyPressLogic (){
       this.func = (event) => {
         if (event.keyCode == '1'.charCodeAt(0)) {
-          window.scrollTo(0, this.aboutRef.offsetTop+SCROLL_OFFSET);
+          window.scrollTo(0, this.blogsRef.offsetTop+SCROLL_OFFSET);
         }
         else if (event.keyCode == '2'.charCodeAt(0)) {
-          window.scrollTo(0, this.experienceRef.offsetTop+SCROLL_OFFSET);
+          window.scrollTo(0, this.aboutRef.offsetTop+SCROLL_OFFSET);
         }
         else if (event.keyCode == '3'.charCodeAt(0)) {
-          window.scrollTo(0, this.blogsRef.offsetTop+SCROLL_OFFSET);
+          window.scrollTo(0, this.experienceRef.offsetTop+SCROLL_OFFSET);
         }
     };
     document.addEventListener("keypress", this.func)
@@ -104,9 +104,9 @@ class BlogIndex extends React.Component {
           <Layout style={{background: "inherit"}}>
             <Content style={{marginTop: rhythm(3), marginLeft:'auto', marginRight:'auto', maxWidth: rhythm(CONTENT_MAX_WIDTH)}}>
               <Jumbotron/>
+              <Blogs refCallback={(ref) => this.blogsRef=ref}/>
               <About refCallback={(ref) => this.aboutRef=ref}/>
               <Experience refCallback={(ref) => this.experienceRef=ref}/>
-              <Blogs refCallback={(ref) => this.blogsRef=ref}/>
             </Content>
           </Layout>
         <Footer style={{background: "inherit"}}>

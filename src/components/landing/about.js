@@ -20,7 +20,7 @@ const AboutMe = ({refCallback}) => {
     return (
     <div ref={refCallback} style={{ marginTop:rhythm(TOP_MARGIN)}} className={IS_MOBILE ? jumboStyles.jumbotronMobile : jumboStyles.jumbotron}>
         <Row>
-          <SectionNumber number={1}/>
+          <SectionNumber number={2}/>
         </Row>
         <Row>
             <section dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
