@@ -14,6 +14,7 @@ import indexStyles from './styles/index.module.css';
 import { rhythm } from '../utils/typography';
 import { theme, author, description } from '../utils/constants';
 import { sleep, repeat } from '../utils/promise';
+import { setMobile } from '../utils/mobile';
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
