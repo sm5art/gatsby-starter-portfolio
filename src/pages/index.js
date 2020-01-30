@@ -98,6 +98,10 @@ class BlogIndex extends React.Component {
         <SEO
               title={author}
               description={description}
+              meta={[{
+                name: `google-site-verification`,
+                content: "SkuXj_g_uDvvxdLmSZ32ZSEFYFwZ0Yqv5t7pcPak8hg",
+              }]}
             />
         <Header style={{position: 'fixed', zIndex: 1, width:'99vw', paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
           <Head refs={[this.aboutRef, this.experienceRef, this.blogsRef]}/>
