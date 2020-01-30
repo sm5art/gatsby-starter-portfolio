@@ -38,10 +38,10 @@ Your site will be running at http://localhost:9000
 * global styles are in global.css
 
 # TODO
-* write a blog for genetic pong
 * make readme more presentable
 * make the top text in jumbotron animate in
 * alternate the colors between about, experience, blogs (see antdesign site)
+* redo the experience section to make experience more presentable
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 

@@ -12,7 +12,7 @@ module.exports = {
         shiftingColors: [colors.volcano[2], colors.orange[2], colors.volcano[3], colors.lime[3]], // COLORS OF BACKGROUND ON INDEX
         jumbotronTypingColor: colors.blue[7], // COLOR OF JUMBOTRON TEXT ON INDEX
         numberColor: colors.blue[7], // COLOR OF # ON INDEX 
-        blogColor: colors.geekblue[3] // COLOR OF BLOG PAGE
+        blogColor: colors.purple[1] // COLOR OF BLOG PAGE
     },
     contactEmail: 'arturk@uw.edu', // EMAIL USED IN GET IN TOUCH
     title: "Artur Kashperskiy", // TITLE OF BLOG PAGE

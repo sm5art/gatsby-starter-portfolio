@@ -1,185 +1,209 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 25 Dec 2019 04:03:30 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[About me Hi im artur just a memer out here trying to make it in silicon valley would you just look at it heres another subtopic hell yea…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
-&lt;p&gt;Hi im artur just a memer out here trying to make it in silicon valley&lt;/p&gt;
-&lt;p&gt;would you just look at it&lt;/p&gt;
-&lt;h3&gt;heres another subtopic hell yea&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;first you need this&lt;/li&gt;
-&lt;li&gt;second get a college degree&lt;/li&gt;
-&lt;li&gt;third you need a meme&lt;/li&gt;
-&lt;/ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Jan 2020 11:09:45 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
+&lt;p&gt;I’m a software engineer based in &lt;strong&gt;Seattle, WA&lt;/strong&gt; who enjoys studying algorithims. I am currently a junior at the &lt;strong&gt;University of Washington&lt;/strong&gt; studying Applied Physics and have had industry experience working as a Python/Javascript engineer. Most recently I was a full stack JS engineer at &lt;strong&gt;Heali.ai&lt;/strong&gt;. I currently work on a blog posting about algorithim/AI concepts.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 300px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e30a013941fb35471bb0142238961a47/26df7/wow.png&quot;
+    href=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 42.578125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+ElEQVQoz2NQm/sBE6nO/eC4+mPKns9Fh7/MuP599q2fhUe+lhz7NvPG57mHbkXNi7NqEbSolGYwXvoZExkt/ey98Uvotq8BW746r/1ssPij/sL3xku/mi155DTF26FXxr5TxrJemsF6zRe7tV8xkdXqL+arvlis+mK1+rPdum8OW//arPlitfW/WXOOcYmgSYWcSZ4EQ/Te755bv3lt/eaJiqAiW7567Pjtuf6lU/3iwC1vMqdvdVv3NGX75dC5201MpRmSD3+PP/gtdv+3yH3fwvd8C9sDJL+H74WhPT/C9v1OW7jVLDA0vX9WWqRd2N4vOSd/hUyZmhepwdBy9Vfnzd+N1/8UnvudfeZ35qkfqcdAKO3495QTv1JPf+vcdKKqe7lHcGPu1EUW3hGxvW3NkxpLe+OKCtUYVj/5MuHi64xtj8x6Tlj0X8w59bvy6p+qqz9Lrvyv2nmgfF1E39by0ulNYfXBKSsiAxsd4vo0q9sDG9qzSmNUGFLmr3TrXSafu4A7bBZv2Hyp/K1O8+77rnhhPu9Nfkv3hlzxmRV6fZXajV3aRbP0spYa+bZomYYqReYbOTjLMKhl1Kqmd4q6V4gG1UiG1sv71cjkLlbqOa3Uc8u8YV9UbEqcjfKMaO0lafprC40W5Ru464gryIpGR+iFBioBAEVoJF0uL5QIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 67.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAXsvoKCWiQ1//8QAGRABAAMBAQAAAAAAAAAAAAAAAgEDEgAE/9oACAEBAAEFAvZYgY3VBnRdZfRQM9//xAAVEQEBAAAAAAAAAAAAAAAAAAAhEP/aAAgBAwEBPwFZ/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHRAAAgEEAwAAAAAAAAAAAAAAAAECEBEhMSJRYf/aAAgBAQAGPwJKG2Rmpv0T7OS0Weaf/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFBYf/aAAgBAQABPyF6qtyS8eujpniq5U5OIxFTnkAADRP/2gAMAwEAAgADAAAAEHsP/8QAFxEBAAMAAAAAAAAAAAAAAAAAARARof/aAAgBAwEBPxBKYj//xAAWEQEBAQAAAAAAAAAAAAAAAAABERD/2gAIAQIBAT8QbTP/xAAbEAEBAAEFAAAAAAAAAAAAAAABEQAhMUFRcf/aAAgBAQABPxBBlh3gOD25Z40VqHerckRAZ6pcKYNLWIGqtb+HCagQDgz/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/e30a013941fb35471bb0142238961a47/799d3/wow.png&quot;
-        srcset=&quot;/static/e30a013941fb35471bb0142238961a47/00d96/wow.png 148w,
-/static/e30a013941fb35471bb0142238961a47/0b23c/wow.png 295w,
-/static/e30a013941fb35471bb0142238961a47/799d3/wow.png 590w,
-/static/e30a013941fb35471bb0142238961a47/2a3d6/wow.png 885w,
-/static/e30a013941fb35471bb0142238961a47/26df7/wow.png 1024w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        alt=&quot;Artur&quot;
+        title=&quot;Artur&quot;
+        src=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg&quot;
+        srcset=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/7237a/Artur.jpg 148w,
+/static/6f44f83c0448680ed17d143c7a4e5830/0cfdf/Artur.jpg 295w,
+/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg 300w&quot;
+        sizes=&quot;(max-width: 300px) 100vw, 300px&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Experience worked at chic fil a then chipotle]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Technologies i’ve been working with&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;worked at chic fil a&lt;/li&gt;
-&lt;li&gt;then chipotle&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/new-beginnings/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
+&lt;li&gt;typescript/react/redux&lt;/li&gt;
+&lt;li&gt;serverless (AWS Lambda)&lt;/li&gt;
+&lt;li&gt;redis&lt;/li&gt;
+&lt;li&gt;mongoDB&lt;/li&gt;
+&lt;li&gt;tensorflow&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Full Stack Engineer Intern @ Heali.ai Quant. Finance Research Intern @ Nipun Capital Software Engineer Intern @ Minted]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Well uncritical so misled&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/my-second-post/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
-&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich.”?
-(&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/hello-world/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span
+&lt;li&gt;Full Stack Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Quant. Finance Research Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims (WIP) 🧬]]></title><description><![CDATA[Introduction A well-defined problem is the first step when coming up with a model.
+Then, a problem is modeled with mathematics and then…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Sat, 04 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;A well-defined problem is the first step when coming up with a model.
+Then, a problem is modeled with mathematics and then algorithims are used to &lt;strong&gt;optimize&lt;/strong&gt; this model to its &lt;strong&gt;best parameters&lt;/strong&gt;.
+The specific problem we are looking at in this blog is the problem of playing pong algorithimically and unsupervised.
+In this blog we are covering one specific type of unsupervised learning algorithim: the genetic algorithim.
+Genetic algorithms are an algorithim introduced in 1960 by John Holland inspired by Darwin’s theory of evolution.
+I will first define the context we are appying the algo to understand the model and why we even need this algo in the first place and then I will include an implementation of the algo later in the blog.
+I assume the reader has a basic understanding of linear algebra (linear algebra equations).
+&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 589px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/07827/salty_egg.jpg&quot;
+    href=&quot;/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAbEAADAQADAQAAAAAAAAAAAAABESEAMUGBof/aAAgBAQABPyGxNMfrLHmCDZmAzzvJJDjEQCHv/9oADAMBAAIAAwAAABDIL//EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAwEBPxARhylZv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAxIWFBcYHh/9oACAEBAAE/EEbMLQ0fMHDVaPIXyI4pk4JUnWacNCtO8ojDE9TGIYES7/Jn/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 46.010186757215614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAAB1JrbLUUn/8QAGRAAAwADAAAAAAAAAAAAAAAAAAECEyEx/9oACAEBAAEFAsydRboh6XBn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AYx//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/Aa1//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECERBScf/aAAgBAQAGPwJKO1WRsfR5/8QAHRABAAICAgMAAAAAAAAAAAAAAQAhETFRcYGhsf/aAAgBAQABPyHEpS1FZxH0m0UOo1nLc9x+kNM28T//2gAMAwEAAgADAAAAEGfP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAE67f/xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQIBAT8QbCMv/8QAHhABAAEEAgMAAAAAAAAAAAAAAREAITGxEIFxocH/2gAIAQEAAT8QWzDcECUO4JxelkEoIAoffylILzEnE26jiZu7KweGq//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/88218/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/7237a/salty_egg.jpg 148w,
-/static/8058f3f26913fea3b6a89a73344fe94a/0cfdf/salty_egg.jpg 295w,
-/static/8058f3f26913fea3b6a89a73344fe94a/88218/salty_egg.jpg 590w,
-/static/8058f3f26913fea3b6a89a73344fe94a/77d57/salty_egg.jpg 885w,
-/static/8058f3f26913fea3b6a89a73344fe94a/5a917/salty_egg.jpg 1180w,
-/static/8058f3f26913fea3b6a89a73344fe94a/07827/salty_egg.jpg 2048w&quot;
+        alt=&quot;Evolution&quot;
+        title=&quot;Evolution&quot;
+        src=&quot;/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg&quot;
+        srcset=&quot;/static/5d921bbf2f1190d34b93514116e8251b/7237a/evolution.jpg 148w,
+/static/5d921bbf2f1190d34b93514116e8251b/0cfdf/evolution.jpg 295w,
+/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg 589w&quot;
+        sizes=&quot;(max-width: 589px) 100vw, 589px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Modeling The Problem&lt;/h1&gt;
+&lt;p&gt;In this section we are solving the sub-problem of coming up with the inputs and outputs of our model such that we get a model that will suit our specific task of figuring out when to move a pong paddle up or down in relation to the game state.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The problem&lt;/strong&gt; - Designing a function that takes any given information from the game state that outputs the ideal action. Mathematically what this model looks like is a function with a domain (input values) that spans the game state and a range (output values) that spans the possible actions.&lt;/p&gt;
+&lt;h2&gt;How do we model?&lt;/h2&gt;
+&lt;p&gt;A model has input features and outputs which are designed based on what the problem specifies. We will be using linear algebra to drive the “unknown” part of this model.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;i.e. y = Ax+B
+x - game state
+y - outputs
+A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;The game state (inputs)&lt;/h2&gt;
+&lt;p&gt;Since the pong game is written in python we have direct memory access to the ball and paddle speed and direction in the x/y direction which we will be using in the engineering of the inputs/game state. The game state will change every frame of the game which will plug into the model to decide the optimal output. The inputs are normalized to reduce weight explosions when optimizing.
+&lt;em&gt;Note: Max Speed and Screen Height are constants defined in the code and could be changed&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/2c0d9/inputs.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.72049689440993%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABTUlEQVQ4y32TjU7CQBCEWzUGf1AoWisWFVFbEISWViMaEzHR8P4v5FzyxayFusnk7na7czt7W8/7az5rLtx667YjjIUTb7OVVccWayo02EdCT+gKsXAjFMIFvj5+Zx1blSUcCofsp8KT8CHMueBTeMe/FCZ8262rcGQI94WmcCQcC2dU7Hx7xHeNmt8K/UqFB+xdYpv1VHihJe7cMjGPyzaaJbzn/MjqkjIeJ6ENI1uhSwhAv9JDH3kDCK+R/kqVV+RHlrDgI0d4SSBBzjMvGPCqDRqfE+9wHtDfsE5yCskEeTmIiS2RWlLQAtLwvzlsITOFNKHiCF9J/E34pl1rA++bHjaRFFBZZpIiHqUHacz4hFWiTYPtM28LSOesU3q+bfKiOskJY+OqmEEyRuYd0gv66mJfvHa7TnJG4pB/94FLcob7HELnXzHszjf7AU0rGf9cZMe8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The inputs&quot;
+        title=&quot;The inputs&quot;
+        src=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/799d3/inputs.png&quot;
+        srcset=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/00d96/inputs.png 148w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/0b23c/inputs.png 295w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/799d3/inputs.png 590w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/2c0d9/inputs.png 644w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;The actions (outputs)&lt;/h2&gt;
+&lt;p&gt;The outputs for &lt;strong&gt;the problem&lt;/strong&gt; is the pong paddle’s direction of action.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/bb275/outputs.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 22.367782629791368%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAAfUlEQVQY022Q7Q7CIAxFETVbZAuyTQfDj/d/y92a8wOTNTkJLe29Beece4lRrOJOXsjt/BFVbNQeYhJZJDGITgTmDsMGovBNzSNoIk+GEwYRfnFqhs44ZrYONN5EL76I2dZvDAqilUX+wgQvNAae0lG/YjRzX9lw4avMaN4BCx0Ep4rQ+iUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The outputs&quot;
+        title=&quot;The outputs&quot;
+        src=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/799d3/outputs.png&quot;
+        srcset=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/00d96/outputs.png 148w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/0b23c/outputs.png 295w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/799d3/outputs.png 590w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/2a3d6/outputs.png 885w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/ae92f/outputs.png 1180w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/bb275/outputs.png 2061w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Algebra of a Neural Network&lt;/h2&gt;
+&lt;p&gt;I used a simple neural network with one set of hidden layers to model the behavior of the paddle.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/c81eb/model.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 8.556701030927835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAVklEQVQI1y3NSwqAMAyE4ax9gq2Kbiq0Cr42gjfw/mfyL8zi20wmiZmZR4MDM05ErNiwYMKLDiUq5R8cahTYTUEuPTp2IemY1zwv3xjRYtDzqE6vXvgBctQEh4Wt0MoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;The outputs&quot;
+        title=&quot;The outputs&quot;
+        src=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/799d3/model.png&quot;
+        srcset=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/00d96/model.png 148w,
+/static/50952e36ae32e15c2a8db8a81eff6904/0b23c/model.png 295w,
+/static/50952e36ae32e15c2a8db8a81eff6904/799d3/model.png 590w,
+/static/50952e36ae32e15c2a8db8a81eff6904/2a3d6/model.png 885w,
+/static/50952e36ae32e15c2a8db8a81eff6904/c81eb/model.png 970w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+Dimensions of variables&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: hidden layers is a constant&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;x: 4x1 (game state/domain)
+y: 1x1  (actions/range)
+A: # hidden layers x 4 (unknown weights)
+B: # hidden layers x 1 (unknown bias)
+C: 1 x # hidden layers (unknown weights)
+D: 1x1 (unknown bias)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is the model I engineered after a few attempts including linear regression. The weights and bias A, B, C, D are all unknown and will be optimized for in the next section of the blog.&lt;/p&gt;
+&lt;h1&gt;The Genetic Algorithim&lt;/h1&gt;
+&lt;h2&gt;Why is this even necessary?&lt;/h2&gt;
+&lt;p&gt;As I mentioned in the previous section, we have 4 weights and bias terms that we need to optimize for yet we don’t have a labeled data set that represents what a pong player should do depending on these inputs. This will require the usage of an unsupervised learning algorithim which will evaluate the progress of learning through a different heuristic. &lt;/p&gt;
+&lt;h2&gt;What is a chromosome (genetic algorithim)?&lt;/h2&gt;
+&lt;h2&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A chromosome which expresses a possible solution to the problem as a string&lt;/li&gt;
+&lt;li&gt;A fitness function which takes a chromosome as input and returns a higher value for better solution(much more likely to reproduce)&lt;/li&gt;
+&lt;li&gt;A population which is just a set of many chromosomes&lt;/li&gt;
+&lt;li&gt;A selection method which determines how parents are selected for breeding from the population&lt;/li&gt;
+&lt;li&gt;A crossover operation which determines how parents combine to produce offspring&lt;/li&gt;
+&lt;li&gt;A mutation operation which determines how random deviations manifest themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What’s the heurstic that drives you to a solution?&lt;/h2&gt;
+&lt;p&gt;Genetic algorithims rely on a fitness heurstic which is a function that takes a chromosome and returns a higher value for a better performing solution.&lt;/p&gt;</content:encoded></item></channel></rss>

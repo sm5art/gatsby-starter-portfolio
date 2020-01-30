@@ -56,9 +56,9 @@ const CVButton = () =>
 const FullWidthHeader = ({refs}) => {
   return (
   <div>
-            <HeaderLink reference={refs[0]} index={1} text={"blog"}/>
-            <HeaderLink reference={refs[1]} index={2} text={"about"}/>
-            <HeaderLink reference={refs[2]} index={3} text={"experience"}/>
+            <HeaderLink reference={refs[2]} index={1} text={"blog"}/>
+            <HeaderLink reference={refs[0]} index={2} text={"about"}/>
+            <HeaderLink reference={refs[1]} index={3} text={"experience"}/>
             <CVButton/>
     </div>
 );
