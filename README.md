@@ -42,6 +42,7 @@ Your site will be running at http://localhost:9000
 * make the top text in jumbotron animate in
 * alternate the colors between about, experience, blogs (see antdesign site)
 * redo the experience section to make experience more presentable
+* make overall font size larger across the board for the site
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
