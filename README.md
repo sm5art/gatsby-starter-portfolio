@@ -45,6 +45,7 @@ Your site will be running at http://localhost:9000
 * make overall font size larger across the board for the site
 * make the header have a set width
 * change headshot to higher res
+* change the link to home on the blog page to logo
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
