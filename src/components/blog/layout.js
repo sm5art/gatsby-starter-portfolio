@@ -4,6 +4,7 @@ import { Button } from 'antd';
 
 import { rhythm, scale } from "../../utils/typography"
 import { title, theme } from '../../utils/constants';
+import { Logo } from '../../components/landing/header';
 
 const BLOG_LAYOUT_WIDTH = 24;
 
@@ -15,44 +16,19 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
             to={`/`}
           >
-            {title}
+            <Logo/>
           </Link>
-        </h1>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
           <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
             to={`/`}
           >
-            {title}
+            <Logo/>
           </Link>
-        </h3>
       )
     }
     return (
@@ -62,7 +38,7 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(BLOG_LAYOUT_WIDTH),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `0 ${rhythm(0.5)}`,
         }}
       >
         <header>{header}</header>

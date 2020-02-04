@@ -14,6 +14,8 @@ const MOBILE_DRAWER_RYTHYM = 1.0;
 const DRAWER_WAIT_DURATION = 250;
 export const SCROLL_OFFSET = -80;
 const LOGO_SPACING = 0.5;
+const HEADER_WIDTH = 32;
+
 // link needs to scroll to a certain ref
 
 const HeaderLink = ({text, index, reference, extraFunc }) => 
@@ -28,7 +30,7 @@ const HeaderLink = ({text, index, reference, extraFunc }) =>
     </a>
     );
 
-const Logo = () => {
+export const Logo = () => {
     const data = useStaticQuery(graphql`
     query LogoQuery {
       avatar: file(absolutePath: { regex: "/logo.png/" }) {
@@ -55,7 +57,7 @@ const CVButton = () =>
 
 const FullWidthHeader = ({refs}) => {
   return (
-  <div>
+    <div>
             <HeaderLink reference={refs[2]} index={1} text={"blog"}/>
             <HeaderLink reference={refs[0]} index={2} text={"about"}/>
             <HeaderLink reference={refs[1]} index={3} text={"experience"}/>
@@ -117,7 +119,10 @@ class HalfWidthHeader extends React.Component {
 //refs is a list of references to the divs containing About, Experience, and blog sections
 export default ({refs}) => 
     (
-    <Row type="flex" justify="space-between">
+    <Row style={{
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      maxWidth: rhythm(HEADER_WIDTH)}} type="flex" justify="space-between">
         <Col><Logo/></Col>
         <Col>{IS_MOBILE ? <HalfWidthHeader refs={refs}/>:  <FullWidthHeader refs={refs}/> }</Col>
     </Row>

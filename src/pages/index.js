@@ -112,9 +112,7 @@ class BlogIndex extends React.Component {
               <Blogs refCallback={(ref) => this.blogsRef=ref}/>
               <About refCallback={(ref) => this.aboutRef=ref}/>
               <Experience refCallback={(ref) => this.experienceRef=ref}/>
-            </Content>
-          </Layout>
-        <Footer style={{background: "inherit"}}>
+              <Footer style={{background: "inherit"}}>
           <footer>
             © {new Date().getFullYear()}, Built with
             {" "}
@@ -122,6 +120,9 @@ class BlogIndex extends React.Component {
             {" and ❤️"}
           </footer>
         </Footer>
+           </Content>
+          </Layout>
+        
       </Layout>
     );
   }
