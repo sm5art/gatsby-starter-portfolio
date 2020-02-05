@@ -46,6 +46,7 @@ Your site will be running at http://localhost:9000
 * make overall font size larger across the board for the site
 * change headshot (to higher res aswell) to lie underneath Artur in the jumbotron
 * move blog profile pic/author to beginning of the page and add an estimate of how long the read is
+* switch from markdown plugin to mdx
 
 # Inspecting data of app with GraphiQL
 Go to http://localhost:8000/___graphql in the browser after running development server to see graphiQL 
