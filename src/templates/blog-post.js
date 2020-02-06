@@ -37,6 +37,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.date}
             </p>
+            <Bio />
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -73,9 +74,6 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
-        <footer>
-          <Bio />
-        </footer>
       </Layout>
     )
   }

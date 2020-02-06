@@ -1,5 +1,5 @@
 ---
-title: Machine Playing Pong Unsupervised with Genetic Algorithims (WIP) 🧬
+title: Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)
 date: "2020-01-04T22:40:32.169Z"
 description: "Building an unsupervised genetic learning algorithim that learns to play pong in 15 minutes in Python."
 ---

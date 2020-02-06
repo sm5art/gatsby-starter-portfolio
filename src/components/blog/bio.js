@@ -12,6 +12,8 @@ import Image from "gatsby-image"
 import { rhythm } from "../../utils/typography"
 import { author } from '../../utils/constants';
 
+const BOTTOM_MARGIN = 1;
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -37,7 +39,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(BOTTOM_MARGIN),
       }}
     >
       <Image
@@ -54,8 +56,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <strong>{author}</strong> who lives and works in Seattle building useful things.
       </p>
     </div>
   )

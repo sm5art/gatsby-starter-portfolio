@@ -45,7 +45,7 @@ Your site will be running at http://localhost:9000
 * add socials to the side for desktop and at the footer for mobile
 * make overall font size larger across the board for the site
 * change headshot (to higher res aswell) to lie underneath Artur in the jumbotron
-* move blog profile pic/author to beginning of the page and add an estimate of how long the read is
+* add how long of a read estimate
 * switch from markdown plugin to mdx
 
 # Inspecting data of app with GraphiQL
