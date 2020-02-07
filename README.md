@@ -46,6 +46,7 @@ Your site will be running at http://localhost:9000
 * make overall font size larger across the board for the site
 * change headshot (to higher res aswell) to lie underneath Artur in the jumbotron
 * add how long of a read estimate
+* create 3 page scroll board
 * switch from markdown plugin to mdx
 
 # Inspecting data of app with GraphiQL
