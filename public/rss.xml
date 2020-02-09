@@ -1,33 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Feb 2020 03:59:44 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Feb 2020 05:38:56 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Full Stack Engineer Intern @ Heali.ai Quant. Finance Research Intern @ Nipun Capital Software Engineer Intern @ Minted]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Full Stack Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Quant. Finance Research Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
 &lt;p&gt;I’m a software engineer based in &lt;strong&gt;Seattle, WA&lt;/strong&gt; who enjoys studying algorithims. I am currently a junior at the &lt;strong&gt;University of Washington&lt;/strong&gt; studying Applied Physics and have had industry experience working as a Python/Javascript engineer. Most recently I was a full stack JS engineer at &lt;strong&gt;Heali.ai&lt;/strong&gt;. I currently work on a blog posting about algorithim/AI concepts.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 300px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 67.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAXsvoKCWiQ1//8QAGRABAAMBAQAAAAAAAAAAAAAAAgEDEgAE/9oACAEBAAEFAvZYgY3VBnRdZfRQM9//xAAVEQEBAAAAAAAAAAAAAAAAAAAhEP/aAAgBAwEBPwFZ/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHRAAAgEEAwAAAAAAAAAAAAAAAAECEBEhMSJRYf/aAAgBAQAGPwJKG2Rmpv0T7OS0Weaf/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFBYf/aAAgBAQABPyF6qtyS8eujpniq5U5OIxFTnkAADRP/2gAMAwEAAgADAAAAEHsP/8QAFxEBAAMAAAAAAAAAAAAAAAAAARARof/aAAgBAwEBPxBKYj//xAAWEQEBAQAAAAAAAAAAAAAAAAABERD/2gAIAQIBAT8QbTP/xAAbEAEBAAEFAAAAAAAAAAAAAAABEQAhMUFRcf/aAAgBAQABPxBBlh3gOD25Z40VqHerckRAZ6pcKYNLWIGqtb+HCagQDgz/2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Artur&quot;
-        title=&quot;Artur&quot;
-        src=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg&quot;
-        srcset=&quot;/static/6f44f83c0448680ed17d143c7a4e5830/7237a/Artur.jpg 148w,
-/static/6f44f83c0448680ed17d143c7a4e5830/0cfdf/Artur.jpg 295w,
-/static/6f44f83c0448680ed17d143c7a4e5830/56b05/Artur.jpg 300w&quot;
-        sizes=&quot;(max-width: 300px) 100vw, 300px&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;Technologies i’ve been working with&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;typescript/react/redux&lt;/li&gt;
@@ -35,12 +12,7 @@
 &lt;li&gt;redis&lt;/li&gt;
 &lt;li&gt;mongoDB&lt;/li&gt;
 &lt;li&gt;tensorflow&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Full Stack Engineer Intern @ Heali.ai Quant. Finance Research Intern @ Nipun Capital Software Engineer Intern @ Minted]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Full Stack Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Quant. Finance Research Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims (WIP) 🧬]]></title><description><![CDATA[Introduction A well-defined problem is the first step when coming up with a model.
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Introduction A well-defined problem is the first step when coming up with a model.
 Then, a problem is modeled with mathematics and then…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Sat, 04 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;A well-defined problem is the first step when coming up with a model.
 Then, a problem is modeled with mathematics and then algorithims are used to &lt;strong&gt;optimize&lt;/strong&gt; this model to its &lt;strong&gt;best parameters&lt;/strong&gt;.
