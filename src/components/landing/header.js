@@ -88,14 +88,18 @@ class HalfWidthHeader extends React.Component {
   }
 
   render() {
-    const { refs } = this.props;
+    const { refs, } = this.props;
     return (
       <div>
-        <Icon onClick={()=>this.setState({visible: true})} type="menu" />
+        <Icon onClick={(e)=>{
+          e.preventDefault();
+          this.setState({visible: true})
+          }} type="menu" />
         <Drawer
               placement="right"
               closable={false}
               onClose={this.onClose}
+              getContainer={false}
               visible={this.state.visible}
             >
               <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
