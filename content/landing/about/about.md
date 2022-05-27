@@ -10,6 +10,3 @@ I'm a software engineer based in **Seattle, WA** who enjoys studying algorithims
 * mongoDB
 * tensorflow
 
-## what am i doing now
-
-well some day i might add morestuff here
