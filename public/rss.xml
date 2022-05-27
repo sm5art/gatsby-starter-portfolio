@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 27 Jan 2021 23:15:01 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Full Stack Engineer Intern @ Heali.ai Quant. Finance Research Intern @ Nipun Capital Software Engineer Intern @ Minted]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Full Stack Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Quant. Finance Research Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 May 2022 16:56:38 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
 &lt;p&gt;I’m a software engineer based in &lt;strong&gt;Seattle, WA&lt;/strong&gt; who enjoys studying algorithims. I am currently a junior at the &lt;strong&gt;University of Washington&lt;/strong&gt; studying Applied Physics and have had industry experience working as a Python/Javascript engineer. Most recently I was a full stack JS engineer at &lt;strong&gt;Heali.ai&lt;/strong&gt;. I currently work on a blog posting about algorithim/AI concepts.&lt;/p&gt;
 &lt;h2&gt;Technologies i’ve been working with&lt;/h2&gt;
 &lt;ul&gt;
@@ -12,6 +7,13 @@
 &lt;li&gt;redis&lt;/li&gt;
 &lt;li&gt;mongoDB&lt;/li&gt;
 &lt;li&gt;tensorflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;what am i doing now&lt;/h2&gt;
+&lt;p&gt;well some day i might add morestuff here&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Full Stack Engineer Intern @ Heali.ai Quant. Finance Research Intern @ Nipun Capital Software Engineer Intern @ Minted]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Full Stack Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Quant. Finance Research Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Introduction A well-defined problem is the first step when coming up with a model.
 Then, a problem is modeled with mathematics and then…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Sat, 04 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;A well-defined problem is the first step when coming up with a model.
@@ -23,28 +25,29 @@ I will first define the context we are appying the algo to understand the model 
 I assume the reader has a basic understanding of linear algebra (linear algebra equations).
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 589px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 589px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg&quot;
+    href=&quot;/static/5d921bbf2f1190d34b93514116e8251b/86a2c/evolution.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 46.010186757215614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAAB1JrbLUUn/8QAGRAAAwADAAAAAAAAAAAAAAAAAAECEyEx/9oACAEBAAEFAsydRboh6XBn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AYx//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/Aa1//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECERBScf/aAAgBAQAGPwJKO1WRsfR5/8QAHRABAAICAgMAAAAAAAAAAAAAAQAhETFRcYGhsf/aAAgBAQABPyHEpS1FZxH0m0UOo1nLc9x+kNM28T//2gAMAwEAAgADAAAAEGfP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAE67f/xAAWEQEBAQAAAAAAAAAAAAAAAAABACH/2gAIAQIBAT8QbCMv/8QAHhABAAEEAgMAAAAAAAAAAAAAAREAITGxEIFxocH/2gAIAQEAAT8QWzDcECUO4JxelkEoIAoffylILzEnE26jiZu7KweGq//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6YTzdYx//8QAGxAAAQQDAAAAAAAAAAAAAAAAAgABAzEREzL/2gAIAQEAAQUC35IDclHyNJ7/AP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASf/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwFn/8QAHBAAAQMFAAAAAAAAAAAAAAAAAQARIQISIIHw/9oACAEBAAY/AhaIch1S/Qt4f//EABwQAQABBAMAAAAAAAAAAAAAAAEAEBEhUUGB8P/aAAgBAQABPyHCNlEaI005svEJuvtPPc3Q/9oADAMBAAIAAwAAABBE3//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8Qgaun/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxBsOcv/xAAeEAACAQQDAQAAAAAAAAAAAAABEQAhMYGxQaHB0f/aAAgBAQABPxBH4IkCWIZozD1pKiQP6Jh6KLKngljozf4gtn5L2NCf/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Evolution&quot;
         title=&quot;Evolution&quot;
-        src=&quot;/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg&quot;
-        srcset=&quot;/static/5d921bbf2f1190d34b93514116e8251b/7237a/evolution.jpg 148w,
-/static/5d921bbf2f1190d34b93514116e8251b/0cfdf/evolution.jpg 295w,
-/static/5d921bbf2f1190d34b93514116e8251b/ffd70/evolution.jpg 589w&quot;
+        src=&quot;/static/5d921bbf2f1190d34b93514116e8251b/86a2c/evolution.jpg&quot;
+        srcset=&quot;/static/5d921bbf2f1190d34b93514116e8251b/a80bd/evolution.jpg 148w,
+/static/5d921bbf2f1190d34b93514116e8251b/1c91a/evolution.jpg 295w,
+/static/5d921bbf2f1190d34b93514116e8251b/86a2c/evolution.jpg 589w&quot;
         sizes=&quot;(max-width: 589px) 100vw, 589px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
@@ -63,29 +66,30 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;em&gt;Note: Max Speed and Screen Height are constants defined in the code and could be changed&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/2c0d9/inputs.png&quot;
+    href=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/78274/inputs.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 69.72049689440993%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABTUlEQVQ4y32TjU7CQBCEWzUGf1AoWisWFVFbEISWViMaEzHR8P4v5FzyxayFusnk7na7czt7W8/7az5rLtx667YjjIUTb7OVVccWayo02EdCT+gKsXAjFMIFvj5+Zx1blSUcCofsp8KT8CHMueBTeMe/FCZ8262rcGQI94WmcCQcC2dU7Hx7xHeNmt8K/UqFB+xdYpv1VHihJe7cMjGPyzaaJbzn/MjqkjIeJ6ENI1uhSwhAv9JDH3kDCK+R/kqVV+RHlrDgI0d4SSBBzjMvGPCqDRqfE+9wHtDfsE5yCskEeTmIiS2RWlLQAtLwvzlsITOFNKHiCF9J/E34pl1rA++bHjaRFFBZZpIiHqUHacz4hFWiTYPtM28LSOesU3q+bfKiOskJY+OqmEEyRuYd0gv66mJfvHa7TnJG4pB/94FLcob7HELnXzHszjf7AU0rGf9cZMe8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTklEQVQ4y32UW0/CQBCFF3kQEVGKtlQLgogtyqUttomamOiDxv//h5wxH2Ss1E1OdrrTOXvm0jr3ezXYM8Gd+7uagoXg3O1fRfXggD0WHGEHgkgQsk8Ej4Irzq451+VZVZZwLjjBXgtKwRtEA8G74NWcr3k3rFNoCY+xT4EvGAm6gjb+Q5PNTmGDGlUJO4Ieu9buyfjP8G3f9Wtq+xPQwZ7xvGRXFSnN0Vrn2DuFtxRTbxrjSMytQ8FUsBLccP4C+RjS0BIW1MYzhDHpFHSwR1dbBOf4PZ6ncFzUpZzw8oLgjD3Cp13ecKF2/plM/bouJ6haYqeoLlEUQ7Yi/U/K0Xc1X0rCWPRBhMoJnQ5QP2QGR4yPXyWyc9g1vhbjsk09NURNEx/89+np2NwTvEFRwRiV2Dm+D9PIvSmn/Bzm1OaBgIy0BhDqhV805VJVfwMxLhnz986yDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The inputs&quot;
         title=&quot;The inputs&quot;
-        src=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/799d3/inputs.png&quot;
-        srcset=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/00d96/inputs.png 148w,
-/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/0b23c/inputs.png 295w,
-/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/799d3/inputs.png 590w,
-/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/2c0d9/inputs.png 644w&quot;
+        src=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/fcda8/inputs.png&quot;
+        srcset=&quot;/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/12f09/inputs.png 148w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/e4a3f/inputs.png 295w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/fcda8/inputs.png 590w,
+/static/6d93b6ae8d97963b81e5f4e5e5f5d7d1/78274/inputs.png 644w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
@@ -94,31 +98,32 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The outputs for &lt;strong&gt;the problem&lt;/strong&gt; is the pong paddle’s direction of action.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/bb275/outputs.png&quot;
+    href=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/d26de/outputs.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 22.367782629791368%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAAfUlEQVQY022Q7Q7CIAxFETVbZAuyTQfDj/d/y92a8wOTNTkJLe29Beece4lRrOJOXsjt/BFVbNQeYhJZJDGITgTmDsMGovBNzSNoIk+GEwYRfnFqhs44ZrYONN5EL76I2dZvDAqilUX+wgQvNAae0lG/YjRzX9lw4avMaN4BCx0Ep4rQ+iUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbElEQVQY022P3QqAIAxGjSKj6M8sMev9X7Pv4gQjGhzUsZ1N55yLohOzGMRKLsDGuRhGsYuJHi9aHL+xImlMrhIXoiJu7pmhhy18o2ZqYose8cgGhe1PI0/UZCv9yiNf8wx5h500ZYSBd0C8PZSvBEZUl5ZHAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The outputs&quot;
         title=&quot;The outputs&quot;
-        src=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/799d3/outputs.png&quot;
-        srcset=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/00d96/outputs.png 148w,
-/static/9111b2648fb9883eef9040b2f41fcbb1/0b23c/outputs.png 295w,
-/static/9111b2648fb9883eef9040b2f41fcbb1/799d3/outputs.png 590w,
-/static/9111b2648fb9883eef9040b2f41fcbb1/2a3d6/outputs.png 885w,
-/static/9111b2648fb9883eef9040b2f41fcbb1/ae92f/outputs.png 1180w,
-/static/9111b2648fb9883eef9040b2f41fcbb1/bb275/outputs.png 2061w&quot;
+        src=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/fcda8/outputs.png&quot;
+        srcset=&quot;/static/9111b2648fb9883eef9040b2f41fcbb1/12f09/outputs.png 148w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/e4a3f/outputs.png 295w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/fcda8/outputs.png 590w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/efc66/outputs.png 885w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/c83ae/outputs.png 1180w,
+/static/9111b2648fb9883eef9040b2f41fcbb1/d26de/outputs.png 2061w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
@@ -127,30 +132,31 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I used a simple neural network with one set of hidden layers to model the behavior of the paddle.
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/c81eb/model.png&quot;
+    href=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/587b0/model.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 8.556701030927835%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAVklEQVQI1y3NSwqAMAyE4ax9gq2Kbiq0Cr42gjfw/mfyL8zi20wmiZmZR4MDM05ErNiwYMKLDiUq5R8cahTYTUEuPTp2IemY1zwv3xjRYtDzqE6vXvgBctQEh4Wt0MoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 8.783783783783782%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVUlEQVQI1y3OOQqAQBBE0QrdmEBUFAYHXBBExMAzeP8j+QcqeDQ01Ysk9ahxIGLDidl1wYAXI0oE9z7PVGiQoA4Fbjxekq0OBwcv13x88sLdR1o/Fn9uigSBoxd9FAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;The outputs&quot;
         title=&quot;The outputs&quot;
-        src=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/799d3/model.png&quot;
-        srcset=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/00d96/model.png 148w,
-/static/50952e36ae32e15c2a8db8a81eff6904/0b23c/model.png 295w,
-/static/50952e36ae32e15c2a8db8a81eff6904/799d3/model.png 590w,
-/static/50952e36ae32e15c2a8db8a81eff6904/2a3d6/model.png 885w,
-/static/50952e36ae32e15c2a8db8a81eff6904/c81eb/model.png 970w&quot;
+        src=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/fcda8/model.png&quot;
+        srcset=&quot;/static/50952e36ae32e15c2a8db8a81eff6904/12f09/model.png 148w,
+/static/50952e36ae32e15c2a8db8a81eff6904/e4a3f/model.png 295w,
+/static/50952e36ae32e15c2a8db8a81eff6904/fcda8/model.png 590w,
+/static/50952e36ae32e15c2a8db8a81eff6904/efc66/model.png 885w,
+/static/50952e36ae32e15c2a8db8a81eff6904/587b0/model.png 970w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
