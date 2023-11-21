@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 May 2022 17:13:06 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Nov 2023 17:23:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Autodesk&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Valravn Capital&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[About me I’m a software engineer based in Seattle, WA who enjoys studying algorithims. I am currently a junior at the University of…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/about/about/</guid><content:encoded>&lt;h1&gt;About me&lt;/h1&gt;
 &lt;p&gt;I’m a software engineer based in &lt;strong&gt;Seattle, WA&lt;/strong&gt; who enjoys studying algorithims. I am currently a junior at the &lt;strong&gt;University of Washington&lt;/strong&gt; studying Applied Physics and have had industry experience working as a Python/Javascript engineer. Most recently I was a full stack JS engineer at &lt;strong&gt;Heali.ai&lt;/strong&gt;. I currently work on a blog posting about algorithim/AI concepts.&lt;/p&gt;
 &lt;h2&gt;Technologies i’ve been working with&lt;/h2&gt;
 &lt;ul&gt;
@@ -7,15 +14,6 @@
 &lt;li&gt;redis&lt;/li&gt;
 &lt;li&gt;mongoDB&lt;/li&gt;
 &lt;li&gt;tensorflow&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;what am i doing now&lt;/h2&gt;
-&lt;p&gt;well some day i might add morestuff here&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Autodesk&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Valravn Capital&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Heali.ai&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Nipun Capital&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Minted&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Introduction A well-defined problem is the first step when coming up with a model.
 Then, a problem is modeled with mathematics and then…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Sat, 04 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;A well-defined problem is the first step when coming up with a model.
@@ -38,7 +36,7 @@ I assume the reader has a basic understanding of linear algebra (linear algebra 
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6YTzdYx//8QAGxAAAQQDAAAAAAAAAAAAAAAAAgABAzEREzL/2gAIAQEAAQUC35IDclHyNJ7/AP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASf/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwFn/8QAHBAAAQMFAAAAAAAAAAAAAAAAAQARIQISIIHw/9oACAEBAAY/AhaIch1S/Qt4f//EABwQAQABBAMAAAAAAAAAAAAAAAEAEBEhUUGB8P/aAAgBAQABPyHCNlEaI005svEJuvtPPc3Q/9oADAMBAAIAAwAAABBE3//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8Qgaun/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxBsOcv/xAAeEAACAQQDAQAAAAAAAAAAAAABEQAhMYGxQaHB0f/aAAgBAQABPxBH4IkCWIZozD1pKiQP6Jh6KLKngljozf4gtn5L2NCf/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6YTzdYx//8QAGxAAAQQDAAAAAAAAAAAAAAAAAgABAzEREzL/2gAIAQEAAQUC35IDclHyNJ7/AP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ASf/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPwFn/8QAHBAAAQMFAAAAAAAAAAAAAAAAAQARIQISIIHw/9oACAEBAAY/AhaIch1S/Qt4f//EABwQAQABBAMAAAAAAAAAAAAAAAEAEBEhUUGB8P/aAAgBAQABPyHCJlEaI005svEJuvtPPc3Q/9oADAMBAAIAAwAAABBE3//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8Qgaun/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxBsOcv/xAAeEAACAQQDAQAAAAAAAAAAAAABEQAhMYGxQaHB0f/aAAgBAQABPxBH8IkCWIZozD1pKiQP6cPRRZU8EsdGbvEFs/JexoT/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -79,7 +77,7 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTklEQVQ4y32UW0/CQBCFF3kQEVGKtlQLgogtyqUttomamOiDxv//h5wxH2Ss1E1OdrrTOXvm0jr3ezXYM8Gd+7uagoXg3O1fRfXggD0WHGEHgkgQsk8Ej4Irzq451+VZVZZwLjjBXgtKwRtEA8G74NWcr3k3rFNoCY+xT4EvGAm6gjb+Q5PNTmGDGlUJO4Ieu9buyfjP8G3f9Wtq+xPQwZ7xvGRXFSnN0Vrn2DuFtxRTbxrjSMytQ8FUsBLccP4C+RjS0BIW1MYzhDHpFHSwR1dbBOf4PZ6ncFzUpZzw8oLgjD3Cp13ecKF2/plM/bouJ6haYqeoLlEUQ7Yi/U/K0Xc1X0rCWPRBhMoJnQ5QP2QGR4yPXyWyc9g1vhbjsk09NURNEx/89+np2NwTvEFRwRiV2Dm+D9PIvSmn/Bzm1OaBgIy0BhDqhV805VJVfwMxLhnz986yDAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABU0lEQVR42nWTW0/CQBCFtzx4AVGpjUjZikSwUhVYLWK8PKgk+v9/kTPkq1lrd5KTbXc7Z+ecmRrzNyLWlWBs/seO4FZwYprj0QQIZyRrDASZIBVYwaXgQTBkb8yzxplPotFivRHs8+64+YNnJdkI3tj/FBTknYcqrAg1OoKu4FBwJOhT8QHftD011ieJGio0kPUgULJnQc7+MWddvh0GvN0S7vGc4+lCcI1PjuboWcn+b4VX3JQIRg0eZjRizrnKfoVsxHrqE5bISUiuuqyJTzQhRs4uSY7zhPMJstOQ5BnezEm+Z7V09J3RWVHQC+OT1jvcqlVY+eaQtqYxBUQL5H8xMv3Q2BSeDTFWKOkFf8kAnzNUWDxP60T+2LS9izqMi0PqkuosOZHfFNPwp+TcWHmo8u74MyY0q/R8/GYS4pDkNbKr0VBPp1TVQ9qSbzaQbof+B6bIGh6//ZgrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -111,7 +109,7 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbElEQVQY022P3QqAIAxGjSKj6M8sMev9X7Pv4gQjGhzUsZ1N55yLohOzGMRKLsDGuRhGsYuJHi9aHL+xImlMrhIXoiJu7pmhhy18o2ZqYose8cgGhe1PI0/UZCv9yiNf8wx5h500ZYSBd0C8PZSvBEZUl5ZHAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAcUlEQVR42m2PWQrAMAhE04WudG+60t7/mB3hBfJR4eEgOqpzzk2iEr1oxEjNmMkjzORBrOSO+Rr9G54FaVTLxImp5RvtWbKExiQayjHaRRtdbLrExC670AuG9sURm4YIFx28U7HEohCv2MSD9vSuLJg+eeoEN1MnMEoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -145,7 +143,7 @@ A, B - unknown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 8.783783783783782%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAVUlEQVQI1y3OOQqAQBBE0QrdmEBUFAYHXBBExMAzeP8j+QcqeDQ01Ysk9ahxIGLDidl1wYAXI0oE9z7PVGiQoA4Fbjxekq0OBwcv13x88sLdR1o/Fn9uigSBoxd9FAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 8.783783783783782%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAU0lEQVR42i3MvQqAMBhD0c9Z8RcsirZD1UUQddHN938rbyHDIZBAzMw6DJiw4EWPHRFe24MSLTLc+JCjVqbOGtlw4cSIFQWcDg8dOuWMgEpdOvU/eBMEfCvSqw8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
