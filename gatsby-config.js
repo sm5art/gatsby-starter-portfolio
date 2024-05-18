@@ -2,8 +2,8 @@ const PARTS = ["software.", 'front end.', 'back end.', 'full stack software.'];
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Artur Kashperskiy`,
+    author: `Artur Kashperskiy`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
