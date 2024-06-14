@@ -6,6 +6,8 @@ description: "Building an unsupervised genetic learning algorithim that learns t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+[Link to code for project on github](https://github.com/sm5art/genetic-pong)
+
 # Introduction
 
 A well-defined problem is the first step when coming up with a model.
