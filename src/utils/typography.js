@@ -1,10 +1,10 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: '14px',
+  baseFontSize: '16px',
   baseLineHeight: 1.5,
-  headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Ubuntu', 'sans-serif'],
+  bodyFontFamily: ['Ubuntu', 'serif'],
   // See below for the full list of options.
 })
 

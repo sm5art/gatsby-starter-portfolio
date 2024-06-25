@@ -6,7 +6,7 @@ import { rhythm, scale } from "../../utils/typography"
 import { title, theme } from '../../utils/constants';
 import { Logo } from '../../components/landing/header';
 
-const BLOG_LAYOUT_WIDTH = 24;
+const BLOG_LAYOUT_WIDTH = 28;
 
 class Layout extends React.Component {
   render() {

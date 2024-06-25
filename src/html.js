@@ -7,7 +7,14 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-
+          
+        {/* Ubuntu font */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></link>
+                
+                
+        {/* Gtag analy */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ2JJVZFCH"></script>
         <script dangerouslySetInnerHTML={{__html: `
         window.dataLayer = window.dataLayer || [];

@@ -1,6 +1,6 @@
 ---
 title: Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)
-date: "2020-01-04T22:40:32.169Z"
+date: "2024-06-24T22:40:32.169Z"
 description: "Building an unsupervised genetic learning algorithim that learns to play pong in 15 minutes in Python."
 ---
 
@@ -10,14 +10,16 @@ description: "Building an unsupervised genetic learning algorithim that learns t
 
 # Introduction
 
-A well-defined problem is the first step when coming up with a model.
-Then, a problem is modeled with mathematics and then algorithims are used to **optimize** this model to its **best parameters**.
-The specific problem we are looking at in this blog is the problem of playing pong algorithimically and unsupervised.
-In this blog we are covering one specific type of unsupervised learning algorithim: the genetic algorithim.
-Genetic algorithms are an algorithim introduced in 1960 by John Holland inspired by Darwin's theory of evolution.
-I will first define the context we are appying the algo to understand the model and why we even need this algo in the first place and then I will include an implementation of the algo later in the blog.
-I assume the reader has a basic understanding of linear algebra (linear algebra equations).
+When approaching a machine learning problem, a clear definition is key. Next, mathematical modeling and algorithmic optimization come into play to fine-tune the model's parameters. In this blog, we'll delve into one specific type of unsupervised learning: **genetic algorithms**. Introduced by John Holland in 1960, inspired by Charles Darwin's theory of evolution, these algorithms have been gaining traction in various fields. Here, we'll explore how a genetic algorithm can be applied to the classic game of Pong, allowing us to play it unsupervised. In this post, we'll first set the context for our problem and then dive into the implementation details later on. This blog assumes some basic knowledge of linear algebra and some basic python programming knowledge.
 ![Evolution](./evolution.jpg)
+
+# The Problem (The Environment)
+
+When I was in college my friend came to me with a really cool project he was working on: he recreated the classic game of pong and was showing me how you can have two players playing simultaneously using different keys on the keyboard. He asked me if its possible to recreate an AI in his game and I set out to explore the potential solutions. I thought of a few ideas, you could try to just create a program that would tell the opponent paddle to move up and down based on the position of the ball relative to the paddle and figure out the correct parameters but I set out to explore more potential solutions here.
+
+![Pong game](./pong.jpg)
+
+The environment of the game of pong consists of two concepts: the state of the game and the actions that either player can take in the game. The state of the game of pong is outlayed by the display shown the the user the 1280x720 output which is only one valued here since the game is mostly unichannel/unicollor, we can assume a pretty simple game space for the game state. But even here we can abstract more features out of this by knowing that we have memory access to the balls position and players position, we can abstract even more simple features than the game screen which allow for more robust and quicker learning. The actions that could be taken in the game are represented by the mainly three actions/controls the player has at any time while playing the game: moving up, moving down, doing nothing.
 
 # Modeling The Problem
 
