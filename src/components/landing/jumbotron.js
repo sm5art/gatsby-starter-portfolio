@@ -19,7 +19,7 @@ const Jumbotron = ({topMessage, bottomMessage, bottomMessagePrefix,}) => (
                 {topMessage}
             </h1>
         </Row>
-        <Row style={{height:'177px'}}>
+        <Row style={{height:'270px'}}>
             <h1 id="element" style={{...scale(JUMBOTRON_TEXT_SCALE)}}>
                 {bottomMessagePrefix}<span style={{color: constants.theme.jumbotronTypingColor}}>{bottomMessage}</span><span className={jumboStyles.blinker}/>
             </h1>

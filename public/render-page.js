@@ -32844,10 +32844,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var typography__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(typography__WEBPACK_IMPORTED_MODULE_0__);
 
 const typography = new typography__WEBPACK_IMPORTED_MODULE_0___default.a({
-  baseFontSize: '14px',
+  baseFontSize: '16px',
   baseLineHeight: 1.5,
-  headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'] // See below for the full list of options.
+  headerFontFamily: ['Ubuntu', 'sans-serif'],
+  bodyFontFamily: ['Ubuntu', 'serif'] // See below for the full list of options.
 
 }); // Hot reload typography in development.
 

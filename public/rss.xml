@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Jun 2024 17:57:34 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Jun 2024 20:33:29 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Autodesk&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Valravn Capital&lt;/strong&gt;&lt;/li&gt;
@@ -14,17 +14,10 @@
 &lt;li&gt;redis&lt;/li&gt;
 &lt;li&gt;mongoDB&lt;/li&gt;
 &lt;li&gt;tensorflow&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Link to code for project on github Introduction A well-defined problem is the first step when coming up with a model.
-Then, a problem is…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Sat, 04 Jan 2020 22:40:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Link to code for project on github Introduction When approaching a machine learning problem, a clear definition is key. Next, mathematical…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Mon, 24 Jun 2024 22:40:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/sm5art/genetic-pong&quot;&gt;Link to code for project on github&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;A well-defined problem is the first step when coming up with a model.
-Then, a problem is modeled with mathematics and then algorithims are used to &lt;strong&gt;optimize&lt;/strong&gt; this model to its &lt;strong&gt;best parameters&lt;/strong&gt;.
-The specific problem we are looking at in this blog is the problem of playing pong algorithimically and unsupervised.
-In this blog we are covering one specific type of unsupervised learning algorithim: the genetic algorithim.
-Genetic algorithms are an algorithim introduced in 1960 by John Holland inspired by Darwin’s theory of evolution.
-I will first define the context we are appying the algo to understand the model and why we even need this algo in the first place and then I will include an implementation of the algo later in the blog.
-I assume the reader has a basic understanding of linear algebra (linear algebra equations).
+&lt;p&gt;When approaching a machine learning problem, a clear definition is key. Next, mathematical modeling and algorithmic optimization come into play to fine-tune the model’s parameters. In this blog, we’ll delve into one specific type of unsupervised learning: &lt;strong&gt;genetic algorithms&lt;/strong&gt;. Introduced by John Holland in 1960, inspired by Charles Darwin’s theory of evolution, these algorithms have been gaining traction in various fields. Here, we’ll explore how a genetic algorithm can be applied to the classic game of Pong, allowing us to play it unsupervised. In this post, we’ll first set the context for our problem and then dive into the implementation details later on. This blog assumes some basic knowledge of linear algebra and some basic python programming knowledge.
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 589px; &quot;
@@ -54,6 +47,41 @@ I assume the reader has a basic understanding of linear algebra (linear algebra 
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;The Problem (The Environment)&lt;/h1&gt;
+&lt;p&gt;When I was in college my friend came to me with a really cool project he was working on: he recreated the classic game of pong and was showing me how you can have two players playing simultaneously using different keys on the keyboard. He asked me if its possible to recreate an AI in his game and I set out to explore the potential solutions. I thought of a few ideas, you could try to just create a program that would tell the opponent paddle to move up and down based on the position of the ball relative to the paddle and figure out the correct parameters but I set out to explore more potential solutions here.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/714b8eaa3303055b85ac3e54408446a1/d8536/pong.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABwIAH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFxABAAMAAAAAAAAAAAAAAAAAAREggf/aAAgBAQABPyEY23//2gAMAwEAAgADAAAAEFAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARECExUf/aAAgBAQABPxBA6Glbl0j5WXpOz//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Pong game&quot;
+        title=&quot;Pong game&quot;
+        src=&quot;/static/714b8eaa3303055b85ac3e54408446a1/1c72d/pong.jpg&quot;
+        srcset=&quot;/static/714b8eaa3303055b85ac3e54408446a1/a80bd/pong.jpg 148w,
+/static/714b8eaa3303055b85ac3e54408446a1/1c91a/pong.jpg 295w,
+/static/714b8eaa3303055b85ac3e54408446a1/1c72d/pong.jpg 590w,
+/static/714b8eaa3303055b85ac3e54408446a1/a8a14/pong.jpg 885w,
+/static/714b8eaa3303055b85ac3e54408446a1/fbd2c/pong.jpg 1180w,
+/static/714b8eaa3303055b85ac3e54408446a1/d8536/pong.jpg 1862w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The environment of the game of pong consists of two concepts: the state of the game and the actions that either player can take in the game. The state of the game of pong is outlayed by the display shown the the user the 1280x720 output which is only one valued here since the game is mostly unichannel/unicollor, we can assume a pretty simple game space for the game state. But even here we can abstract more features out of this by knowing that we have memory access to the balls position and players position, we can abstract even more simple features than the game screen which allow for more robust and quicker learning. The actions that could be taken in the game are represented by the mainly three actions/controls the player has at any time while playing the game: moving up, moving down, doing nothing.&lt;/p&gt;
 &lt;h1&gt;Modeling The Problem&lt;/h1&gt;
 &lt;p&gt;In this section we are solving the sub-problem of coming up with the inputs and outputs of our model such that we get a model that will suit our specific task of figuring out when to move a pong paddle up or down in relation to the game state.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The problem&lt;/strong&gt; - Designing a function that takes any given information from the game state that outputs the ideal action. Mathematically what this model looks like is a function with a domain (input values) that spans the game state and a range (output values) that spans the possible actions.&lt;/p&gt;
