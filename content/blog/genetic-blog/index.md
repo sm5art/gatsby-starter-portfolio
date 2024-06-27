@@ -186,23 +186,53 @@ def format_weight_array(array):
     return A, B, C, D
 ```
 
-# The Genetic Algorithim
+# The Genetic Algorithm
 
 ## Why is this even necessary?
 
-As I mentioned in the previous section, we have 4 weights and bias terms that we need to optimize for yet we don't have a labeled data set that represents what a pong player should do depending on these inputs. This will require the usage of an unsupervised learning algorithim which will evaluate the progress of learning through a different heuristic.
+As I mentioned in the previous section, we have 4 weights and bias terms that we need to optimize for yet we don't have a labeled data set that represents what a pong player should do depending on these inputs. This will require the usage of an unsupervised learning algorithm which will evaluate the progress of learning through a different heuristic. The genetic algorithm draws many simularities to the monte carlo method, although it uses extra genetic based heuristics to guide beyond the method of just randomly guessing and checking as monte carlo does to find best parameters (solution) to the problem/model.
 
-## What is a chromosome (genetic algorithim)?
-
-## Contents
-
-* A chromosome which expresses a possible solution to the problem as a string
-* A fitness function which takes a chromosome as input and returns a higher value for better solution(much more likely to reproduce)
-* A population which is just a set of many chromosomes
+## Basic structure of any genetic algorithm
+The basic structure of a genetic algorithm contains:
+* A chromosome which expresses a possible solution to the problem (parameters) as a easily breedable object in the context of a genetic algorithm. 
+* A fitness function which takes a chromosome as input and returns a higher value for what we consider is a better solution (make it much more likely to reproduce)
+* A population which is just a set of many chromosomes, typically randomly generated initially and bred into subsequent populations
 * A selection method which determines how parents are selected for breeding from the population
 * A crossover operation which determines how parents combine to produce offspring
 * A mutation operation which determines how random deviations manifest themselves
 
-## What's the heurstic that drives you to a solution?
+## What is a chromosome? (context of a genetic algorithim)
+A chromosome is an abstract representation of the parameters of the model in such a way that each chromosome can be bred with another chromosome to produce another chromosome that has features extracted from the two parent chromosomes to allow for exploration for the solution in the algorithm. In our model above, we are mostly looking at inputs in the range of floating numbers from -1 to 1 and expecting outputs in a similar sort of range of -1 to 1 floating. We must design our chromosome structure to support floating point weights for the A, B, C, D weights in the model such that the ranges will align with the inputs/outputs but also can be stored in a "chromsomal" that can be easily bred. 
 
-Genetic algorithims rely on a fitness heurstic which is a function that takes a chromosome and returns a higher value for a better performing solution.
+*Insert image describing breeding logic here*
+
+Let's take a quick look at the code to see more.
+```
+"""
+Gene class contains a class to represent a pong paddle's alleles and to easily convert them 
+to decimal numbers so that you can use the values in inference as well as in training the algo
+w/ crossover and mutation.
+"""
+class Gene(object):
+    n = 8 # how many alleles should I use to represent one number 
+    hidden_size = 16 # how many hidden layer you want, positively correlated w/ size of allele
+    input_size = 4 # how many inputs there are, positively correlated w/ size of allele
+    var = input_size*hidden_size + 2*hidden_size + 1 # total number of variables to account for based on NN model
+    weight_min = -1
+    weight_max = 1
+    def __init__(self, alleles=None):
+        if alleles:
+            self.alleles = alleles
+        else:
+            self.alleles = [random.randint(0, 1) for i in range(Gene.var*Gene.n)]
+
+    # get decimal number array of length var from binary allele representation
+    def numpy_values(self):
+        vals = []
+        for i in range(Gene.var): # the next line looks really complicated but all it does is convert to binary
+            vals.append(          # and then normalize between weight_min and weight_max
+                int("".join(
+                    [str(g) for g in self.alleles[i*Gene.n:(i+1)*Gene.n]]), 2) 
+                * (Gene.weight_max-Gene.weight_min)/2**Gene.n + Gene.weight_min )
+        return np.array(vals)
+```
