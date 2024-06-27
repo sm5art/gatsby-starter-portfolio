@@ -306,18 +306,47 @@ def format_weight_array(array):
     C = np.array(array[hidden_size*(input_size+1):hidden_size*(input_size+2)])
     D = np.array(array[hidden_size*(input_size+2)])
     return A, B, C, D</code></pre></div>
-<h1>The Genetic Algorithim</h1>
+<h1>The Genetic Algorithm</h1>
 <h2>Why is this even necessary?</h2>
-<p>As I mentioned in the previous section, we have 4 weights and bias terms that we need to optimize for yet we don’t have a labeled data set that represents what a pong player should do depending on these inputs. This will require the usage of an unsupervised learning algorithim which will evaluate the progress of learning through a different heuristic.</p>
-<h2>What is a chromosome (genetic algorithim)?</h2>
-<h2>Contents</h2>
+<p>As I mentioned in the previous section, we have 4 weights and bias terms that we need to optimize for yet we don’t have a labeled data set that represents what a pong player should do depending on these inputs. This will require the usage of an unsupervised learning algorithm which will evaluate the progress of learning through a different heuristic. The genetic algorithm draws many simularities to the monte carlo method, although it uses extra genetic based heuristics to guide beyond the method of just randomly guessing and checking as monte carlo does to find best parameters (solution) to the problem/model.</p>
+<h2>Basic structure of any genetic algorithm</h2>
+<p>The basic structure of a genetic algorithm contains:</p>
 <ul>
-<li>A chromosome which expresses a possible solution to the problem as a string</li>
-<li>A fitness function which takes a chromosome as input and returns a higher value for better solution(much more likely to reproduce)</li>
-<li>A population which is just a set of many chromosomes</li>
+<li>A chromosome which expresses a possible solution to the problem (parameters) as a easily breedable object in the context of a genetic algorithm. </li>
+<li>A fitness function which takes a chromosome as input and returns a higher value for what we consider is a better solution (make it much more likely to reproduce)</li>
+<li>A population which is just a set of many chromosomes, typically randomly generated initially and bred into subsequent populations</li>
 <li>A selection method which determines how parents are selected for breeding from the population</li>
 <li>A crossover operation which determines how parents combine to produce offspring</li>
 <li>A mutation operation which determines how random deviations manifest themselves</li>
 </ul>
-<h2>What’s the heurstic that drives you to a solution?</h2>
-<p>Genetic algorithims rely on a fitness heurstic which is a function that takes a chromosome and returns a higher value for a better performing solution.</p></section><hr style="margin-bottom:1.5rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li></li><li></li></ul></nav></main><footer>© <!-- -->2024<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/genetic-blog/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4c9e5ca557f297a65cac.js"],"app":["/app-ccd3752fa8e83ba45342.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-ad6431e4664bcf916d19.js"],"component---src-pages-404-js":["/component---src-pages-404-js-d10c868968bab7802ad8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1507de7d091d42d437ff.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ebe14892f7cab71876d4.js"]};/*]]>*/</script><script src="/polyfill-4c9e5ca557f297a65cac.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-ebe14892f7cab71876d4.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-d1aeef355fc1cfffde69.js" async=""></script><script src="/aec7d165-96d895ed2fbc4ddb49e4.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-ccd3752fa8e83ba45342.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-b9659cc83e678264dab7.js" async=""></script></body></html>
+<h2>What is a chromosome? (context of a genetic algorithim)</h2>
+<p>A chromosome is an abstract representation of the parameters of the model in such a way that each chromosome can be bred with another chromosome to produce another chromosome that has features extracted from the two parent chromosomes to allow for exploration for the solution in the algorithm. In our model above, we are mostly looking at inputs in the range of floating numbers from -1 to 1 and expecting outputs in a similar sort of range of -1 to 1 floating. We must design our chromosome structure to support floating point weights for the A, B, C, D weights in the model such that the ranges will align with the inputs/outputs but also can be stored in a “chromsomal” that can be easily bred. </p>
+<p><em>Insert image describing breeding logic here</em></p>
+<p>Let’s take a quick look at the code to see more.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&quot;&quot;&quot;
+Gene class contains a class to represent a pong paddle&#39;s alleles and to easily convert them 
+to decimal numbers so that you can use the values in inference as well as in training the algo
+w/ crossover and mutation.
+&quot;&quot;&quot;
+class Gene(object):
+    n = 8 # how many alleles should I use to represent one number 
+    hidden_size = 16 # how many hidden layer you want, positively correlated w/ size of allele
+    input_size = 4 # how many inputs there are, positively correlated w/ size of allele
+    var = input_size*hidden_size + 2*hidden_size + 1 # total number of variables to account for based on NN model
+    weight_min = -1
+    weight_max = 1
+    def __init__(self, alleles=None):
+        if alleles:
+            self.alleles = alleles
+        else:
+            self.alleles = [random.randint(0, 1) for i in range(Gene.var*Gene.n)]
+
+    # get decimal number array of length var from binary allele representation
+    def numpy_values(self):
+        vals = []
+        for i in range(Gene.var): # the next line looks really complicated but all it does is convert to binary
+            vals.append(          # and then normalize between weight_min and weight_max
+                int(&quot;&quot;.join(
+                    [str(g) for g in self.alleles[i*Gene.n:(i+1)*Gene.n]]), 2) 
+                * (Gene.weight_max-Gene.weight_min)/2**Gene.n + Gene.weight_min )
+        return np.array(vals)</code></pre></div></section><hr style="margin-bottom:1.5rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li></li><li></li></ul></nav></main><footer>© <!-- -->2024<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/genetic-blog/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-4c9e5ca557f297a65cac.js"],"app":["/app-ccd3752fa8e83ba45342.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-ad6431e4664bcf916d19.js"],"component---src-pages-404-js":["/component---src-pages-404-js-d10c868968bab7802ad8.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1507de7d091d42d437ff.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ebe14892f7cab71876d4.js"]};/*]]>*/</script><script src="/polyfill-4c9e5ca557f297a65cac.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-ebe14892f7cab71876d4.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-d1aeef355fc1cfffde69.js" async=""></script><script src="/aec7d165-96d895ed2fbc4ddb49e4.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-ccd3752fa8e83ba45342.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-b9659cc83e678264dab7.js" async=""></script></body></html>
