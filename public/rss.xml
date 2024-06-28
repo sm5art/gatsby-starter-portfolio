@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Jun 2024 22:22:15 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Jun 2024 06:46:35 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Autodesk&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Valravn Capital&lt;/strong&gt;&lt;/li&gt;
@@ -14,7 +14,7 @@
 &lt;li&gt;redis&lt;/li&gt;
 &lt;li&gt;mongoDB&lt;/li&gt;
 &lt;li&gt;tensorflow&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)]]></title><description><![CDATA[Link to code for project on github Introduction When approaching a machine learning problem, a clear definition is key. Next, mathematical…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Mon, 24 Jun 2024 22:40:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Machine Playing Pong Unsupervised with Genetic Algorithims 🧬]]></title><description><![CDATA[Link to code for project on github Introduction When approaching a machine learning problem, a clear definition is key. Next, mathematical…]]></description><link>https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comblogs/genetic-blog/</guid><pubDate>Mon, 24 Jun 2024 22:40:32 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/sm5art/genetic-pong&quot;&gt;Link to code for project on github&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;When approaching a machine learning problem, a clear definition is key. Next, mathematical modeling and algorithmic optimization come into play to fine-tune the model’s parameters. In this blog, we’ll delve into one specific type of unsupervised learning: &lt;strong&gt;genetic algorithms&lt;/strong&gt;. Introduced by John Holland in 1960, inspired by Charles Darwin’s theory of evolution, these algorithms have been gaining traction in various fields such as quant finance and various control theory objectives like robotics and also science fields like medicine/and materials. Here, we’ll explore how a genetic algorithm can be applied to the classic game of Pong, allowing us to play it unsupervised. In this post, we’ll first set the context for our problem and then dive into the implementation details later on. This blog assumes some basic knowledge of linear algebra and some basic python programming knowledge.
@@ -374,13 +374,202 @@ class Gene(object):
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;What is a population?&lt;/h2&gt;
-&lt;p&gt;A population is just a set of chromosomes that are bred to produce the next generation.&lt;/p&gt;
+&lt;p&gt;A population is just a set of chromosomes that are bred to produce the next generation. We use the Generation class in our project to manage the population of genes. Below I show the code, where we have an init function that could have genes specified or not. If genes is not specified, we randomly generate a population of genes with a size of the specified parameter initial_population. If it is then we just create this generation with the specified gene objects (usually produced from a subsequent breeding of last generation). The point of this class is to keep track of a lot of gene objects in relation to each other while tracking their fitness so that we can reproduce them into subsequent generations.
+How is it initialized?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;&amp;quot;&amp;quot;
+The Generation class contains a class used keep track of the current generation of the training sequence of paddles. 
+The Generation class assumes that you setup the training conditions such that you have one large right paddle that fills up the screen.
+
+
+Params:
+    initial_population (int) - the starting size of your generation 1 paddles
+
+&amp;quot;&amp;quot;&amp;quot;
+class Generation(object):
+    def __init__(self, initial_population, right_paddle, screen):
+        self.P = initial_population
+        self.right_paddle = right_paddle
+        self.screen = screen
+        self.generation = 0
+        self.init()
+
+    def init(self, genes=None):
+        self.train_paddles = []
+        self.dead = False
+        self.generation += 1
+        if genes:
+            for i in range(len(genes)):
+                color = [100, 100, 100]
+                mod = i%3
+                color[mod] = i % 255
+                a = Train(color, self.screen,SPACING,HEIGHT/2,P_LENGTH,P_WIDTH,&amp;#39;two&amp;#39;,P_SPEED, gene=genes[i])
+                a.one = self.right_paddle
+                self.train_paddles.append(a)
+        else:
+            for i in range(self.P):
+                color = [100, 100, 100]
+                mod = i%3
+                color[mod] = i % 255
+                a = Train(color, self.screen,SPACING,HEIGHT/2,P_LENGTH,P_WIDTH,&amp;#39;two&amp;#39;,P_SPEED)
+                a.one = self.right_paddle
+                self.train_paddles.append(a)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is the Train object that is being referenced here which instantiantes a pong paddle with its own ball for training. The training scenario includes many independent paddles battling against a wall on the right side which would bounce the ball back at a random angle. The goal of the gene/train function is to try to hit back the ball as many times against this random wall as possible, being counted by the Generation module.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;&amp;quot;&amp;quot;
+The train class is a class that represents an instance of the paddles used in the training sequence.
+The argument to look closely at in the context of the algorithim is the gene Variable which will contain
+the information that represents the behavior of that paddle.
+&amp;quot;&amp;quot;&amp;quot;
+class Train(object):
+    def __init__(self, color, screen,x,y,length,width,player,speed, gene=None):
+        self.color = color
+        self.paddle = paddle(screen,x,y,length,width,player,speed)
+        self.ball = Ball(screen,WIDTH/2,HEIGHT/2,20,-5,random.choice([-5, 5]), color)
+        self.dead = False
+        self.fitness = 0
+        if gene:
+            self.g = gene
+            self.F = self.g.numpy_values()
+            self.A, self.B, self.C, self.D = format_weight_array(self.F)
+        else:
+            self.g = Gene()
+            self.F = self.g.numpy_values()
+            self.A, self.B, self.C, self.D = format_weight_array(self.F)
+
+    def move(self, decision):
+        if decision &amp;gt; 0.1:
+            self.paddle._move_up()
+        elif decision &amp;lt; -0.1:
+            self.paddle._move_down()
+        self.paddle._draw(color=self.color)
+
+    def on_update(self):
+        if self.dead:
+            return
+        self.ball.move()
+        if (self.ball.x &amp;lt;= 0 or self.ball.x+self.ball.size/2 &amp;gt;= WIDTH):
+            self.dead = True
+            return
+        if self.check_collision(self.paddle):
+            self.fitness += 1
+        self.check_collision(self.one, train=True)
+        X = prepare_features(self.ball.x_speed, self.ball.y_speed, self.ball.y, self.paddle.y)
+        self.move(nn(self.A, self.B, self.C, self.D, X))
+
+    def check_collision(self, paddle, train=False):
+        if self.ball.collide(pygame.Rect(paddle.x, paddle.y, paddle.width, paddle.length)):
+            self.ball.bounce(MAXSPEED,MAXBOUNCEANGLE, paddle, train=train)
+            return True
+        return False
+
+def prepare_features(ball_dx, ball_dy, y_ball, y_paddle):
+    return np.array([ball_dy/MAXSPEED, ball_dx/MAXSPEED, (y_ball-y_paddle)/HEIGHT, y_paddle/HEIGHT])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;What is a fitness function?&lt;/h2&gt;
-&lt;p&gt;The fitness function takes in a chromosome and returns a value which is used to determine how likely it is for that chromosome to be reproduced into the next generation. The higher the value, the more likely it will be selected as a parent.&lt;/p&gt;
+&lt;p&gt;The fitness function takes in a chromosome and returns a value which is used to determine how likely it is for that chromosome to be reproduced into the next generation. The higher the value, the more likely it will be selected as a parent. Here the fitness was counted by the training function for each gene which would count how many times the paddle would successfully hit the ball back towards the wall on the right. The fitness value is updated here in the Train class:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Train(object):
+    ...
+    def on_update(self):
+        if self.dead:
+            return
+        self.ball.move()
+        if (self.ball.x &amp;lt;= 0 or self.ball.x+self.ball.size/2 &amp;gt;= WIDTH):
+            self.dead = True
+            return
+        if self.check_collision(self.paddle):
+            self.fitness += 1 &amp;lt;--------------
+        self.check_collision(self.one, train=True)
+        X = prepare_features(self.ball.x_speed, self.ball.y_speed, self.ball.y, self.paddle.y)
+        self.move(nn(self.A, self.B, self.C, self.D, X))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;What is a selection function?&lt;/h2&gt;
-&lt;p&gt;The selection function takes in a population and returns a subset of the population which are the parents of the next generation. It is up to you how you implement this but we recommend using a tournament selection with elitism to select the best chromosomes from the previous generation.&lt;/p&gt;
+&lt;p&gt;The selection function takes in a population and returns a subset of the population which are the parents of the next generation. It is up to you how you implement this but we recommend using a tournament selection with elitism to select the best chromosomes from the previous generation. This would let a generation of Train classes of many different genes run for as long as until the last paddle dies (ball falls through it) or until many of the paddles reach the maximum fitness score of 40. Once we reach the end, we simply choose the top genes from the pool with the highest fitness and breed those into the next generation. Here is the code in the Generation class that handles the selection of the genes into the subsequent generations:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Generation(object):
+    ...
+    # this method returns a new generation of those who had the best fitness of the dead paddles
+    # it choses the highest two fitness scores and crossbreeds these two
+    def selection(self):
+        if not self.dead:
+            return
+        new_generation = []
+        fitness = [(i, paddle.fitness) for i, paddle in enumerate(self.train_paddles)]
+        fitness = sorted(fitness, key=lambda x: x[1])
+        top_n_n = 40
+        fit_list = fitness[-top_n_n:]
+        random.shuffle(fit_list)
+        top_n = top_n_n//2
+        for i in range(top_n):
+            myself = self.train_paddles[fit_list.pop()[0]].g
+            mate = self.train_paddles[fit_list.pop()[0]].g
+            son = myself.crossover(mate, n_children=20) # woah calm down there assuming genders
+            new_generation += son
+        self.init(genes=new_generation)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;What is a crossover function?&lt;/h2&gt;
-&lt;p&gt;The crossover function takes in two parent chromosomes and returns two child chromosomes. The parents are selected by the selection function, so you can use any method to select them.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Insert image describing breeding logic here&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The crossover function takes in two parent chromosomes and returns two child chromosomes. The parents are selected by the selection function, so you can use any method to select them.
+Here is the code describing the crossover function:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Gene(object):
+    ...
+    def _crossover(self, other):
+        alleles = []
+        for i in range(Gene.var*Gene.n):
+            if random.randint(0, 1) &amp;gt; 0:
+                alleles.append(self.alleles[i])
+            else:
+                alleles.append(other.alleles[i])
+        alleles = self._mutate(alleles)
+        return Gene(alleles=alleles)
+
+    #returns list of children (Gene object)
+    # crossover will create crossover with the self and other for a total of n_children times 
+    # returns a list of Genes in size n_children
+    def crossover(self, other, n_children=50):
+        lst = []
+        for i in range(n_children):
+            lst.append(self._crossover(other))
+        return lst&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is a diagram describing the crossover logic in the function above on how two parent genes crossover to form a child gene:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/37f8ccb2fe017387bb60deed7a0453b3/0f98f/crossover.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd0Fkj//xAAWEAEBAQAAAAAAAAAAAAAAAAABEAD/2gAIAQEAAQUCrif/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAABBAMAAAAAAAAAAAAAAAAAARARMSFBYf/aAAgBAQABPyHdEcEMaFy3/9oADAMBAAIAAwAAABBQD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEBAQADAAAAAAAAAAAAAAERACEQMWH/2gAIAQEAAT8QGun73RHPTCB4bkDW+P/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;crossover function&quot;
+        title=&quot;crossover function&quot;
+        src=&quot;/static/37f8ccb2fe017387bb60deed7a0453b3/1c72d/crossover.jpg&quot;
+        srcset=&quot;/static/37f8ccb2fe017387bb60deed7a0453b3/a80bd/crossover.jpg 148w,
+/static/37f8ccb2fe017387bb60deed7a0453b3/1c91a/crossover.jpg 295w,
+/static/37f8ccb2fe017387bb60deed7a0453b3/1c72d/crossover.jpg 590w,
+/static/37f8ccb2fe017387bb60deed7a0453b3/a8a14/crossover.jpg 885w,
+/static/37f8ccb2fe017387bb60deed7a0453b3/fbd2c/crossover.jpg 1180w,
+/static/37f8ccb2fe017387bb60deed7a0453b3/0f98f/crossover.jpg 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;What is a mutation function?&lt;/h2&gt;
-&lt;p&gt;The mutation function takes in a chromosome and returns a new chromosome which is a mutated version of the original one. This is where you can introduce randomness into your algorithm.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;The mutation function takes in a chromosome and returns a new chromosome which is a mutated version of the original one. This is used above in the crossover to introduce some randomness during breeding which allows for more exploration during training.
+Here is the code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Gene(object):
+    ...
+    # default chance of mutation is 1%
+    def _mutate(self, alleles, chance=0.01):
+        new_alleles = []
+        for i in range(Gene.var*Gene.n):
+            if random.random() &amp;lt; chance and i % Gene.n != 0:
+                stored = new_alleles.pop()
+                new_alleles.append(alleles[i])
+                new_alleles.append(stored)
+            else:
+                new_alleles.append(alleles[i])
+        return new_alleles&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
