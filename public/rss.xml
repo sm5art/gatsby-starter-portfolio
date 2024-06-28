@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Jun 2024 16:14:32 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Artur Kashperskiy]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Jun 2024 22:22:15 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Experience Software Engineer Intern @ Autodesk Software Engineer Intern @ Valravn Capital Software Engineer Intern @ Heali.ai Software…]]></description><link>https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.comlanding/experience/experience/</guid><content:encoded>&lt;h1&gt;Experience&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Autodesk&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Software Engineer Intern @ &lt;strong&gt;Valravn Capital&lt;/strong&gt;&lt;/li&gt;
@@ -312,7 +312,6 @@ def format_weight_array(array):
 &lt;/ul&gt;
 &lt;h2&gt;What is a chromosome? (context of a genetic algorithim)&lt;/h2&gt;
 &lt;p&gt;A chromosome is an abstract representation of the parameters of the model in such a way that each chromosome can be bred with another chromosome to produce another chromosome that has features extracted from the two parent chromosomes to allow for exploration for the solution in the algorithm. In our model above, we are mostly looking at inputs in the range of floating numbers from -1 to 1 and expecting outputs in a similar sort of range of -1 to 1 floating. We must design our chromosome structure to support floating point weights for the A, B, C, D weights in the model such that the ranges will align with the inputs/outputs but also can be stored in a “chromsomal” that can be easily bred. &lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Insert image describing breeding logic here&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Let’s take a quick look at the code to see more.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;&amp;quot;&amp;quot;
 Gene class contains a class to represent a pong paddle&amp;#39;s alleles and to easily convert them 
@@ -340,4 +339,48 @@ class Gene(object):
                 int(&amp;quot;&amp;quot;.join(
                     [str(g) for g in self.alleles[i*Gene.n:(i+1)*Gene.n]]), 2) 
                 * (Gene.weight_max-Gene.weight_min)/2**Gene.n + Gene.weight_min )
-        return np.array(vals)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+        return np.array(vals)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is a quick diagram showing what the code is doing above. The Gene object is responsible for holding a representation of the weights of the model in an “allele” like format which is structured here as a binary list of 1 and 0s with a specified length based on the amount of variables and precision specified. The reason why we store our weights in this format is to have an easy representation for comparing and breeding between two different Gene objects representing different weights. The numpy_values functions provides a mapping between the allele format stored internally and creating the float representation used in the matrix calculation at runtime to calculate the decision from the game state. This function takes the alleles that were initialized for the amount of inputs and outputs and hidden size of the model and will output the proper floating decimal numbers that will represent the A, B, C, D matrix values.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e81628cae687093be811b9e1b72e923f/0f98f/genestructure.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe6qCmj/xAAWEAADAAAAAAAAAAAAAAAAAAABECD/2gAIAQEAAQUCgL//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAACAwEAAAAAAAAAAAAAAAAAARARITH/2gAIAQEAAT8hyy8Ex8G2P//aAAwDAQACAAMAAAAQ08//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAgIDAAAAAAAAAAAAAAABACEQETFhkf/aAAgBAQABPxDkogCmtHcFLT2VeozZXH//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Gene Binary Structure&quot;
+        title=&quot;Gene Binary Structure&quot;
+        src=&quot;/static/e81628cae687093be811b9e1b72e923f/1c72d/genestructure.jpg&quot;
+        srcset=&quot;/static/e81628cae687093be811b9e1b72e923f/a80bd/genestructure.jpg 148w,
+/static/e81628cae687093be811b9e1b72e923f/1c91a/genestructure.jpg 295w,
+/static/e81628cae687093be811b9e1b72e923f/1c72d/genestructure.jpg 590w,
+/static/e81628cae687093be811b9e1b72e923f/a8a14/genestructure.jpg 885w,
+/static/e81628cae687093be811b9e1b72e923f/fbd2c/genestructure.jpg 1180w,
+/static/e81628cae687093be811b9e1b72e923f/0f98f/genestructure.jpg 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;What is a population?&lt;/h2&gt;
+&lt;p&gt;A population is just a set of chromosomes that are bred to produce the next generation.&lt;/p&gt;
+&lt;h2&gt;What is a fitness function?&lt;/h2&gt;
+&lt;p&gt;The fitness function takes in a chromosome and returns a value which is used to determine how likely it is for that chromosome to be reproduced into the next generation. The higher the value, the more likely it will be selected as a parent.&lt;/p&gt;
+&lt;h2&gt;What is a selection function?&lt;/h2&gt;
+&lt;p&gt;The selection function takes in a population and returns a subset of the population which are the parents of the next generation. It is up to you how you implement this but we recommend using a tournament selection with elitism to select the best chromosomes from the previous generation.&lt;/p&gt;
+&lt;h2&gt;What is a crossover function?&lt;/h2&gt;
+&lt;p&gt;The crossover function takes in two parent chromosomes and returns two child chromosomes. The parents are selected by the selection function, so you can use any method to select them.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Insert image describing breeding logic here&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;What is a mutation function?&lt;/h2&gt;
+&lt;p&gt;The mutation function takes in a chromosome and returns a new chromosome which is a mutated version of the original one. This is where you can introduce randomness into your algorithm.&lt;/p&gt;</content:encoded></item></channel></rss>

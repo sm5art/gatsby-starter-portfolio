@@ -1,5 +1,5 @@
 ---
-title: Machine Playing Pong Unsupervised with Genetic Algorithims 🧬 (WIP)
+title: Machine Playing Pong Unsupervised with Genetic Algorithims 🧬
 date: "2024-06-24T22:40:32.169Z"
 description: "Building an unsupervised genetic learning algorithim that learns to play pong in 15 minutes in Python."
 ---
@@ -204,8 +204,6 @@ The basic structure of a genetic algorithm contains:
 ## What is a chromosome? (context of a genetic algorithim)
 A chromosome is an abstract representation of the parameters of the model in such a way that each chromosome can be bred with another chromosome to produce another chromosome that has features extracted from the two parent chromosomes to allow for exploration for the solution in the algorithm. In our model above, we are mostly looking at inputs in the range of floating numbers from -1 to 1 and expecting outputs in a similar sort of range of -1 to 1 floating. We must design our chromosome structure to support floating point weights for the A, B, C, D weights in the model such that the ranges will align with the inputs/outputs but also can be stored in a "chromsomal" that can be easily bred. 
 
-*Insert image describing breeding logic here*
-
 Let's take a quick look at the code to see more.
 ```
 """
@@ -235,4 +233,198 @@ class Gene(object):
                     [str(g) for g in self.alleles[i*Gene.n:(i+1)*Gene.n]]), 2) 
                 * (Gene.weight_max-Gene.weight_min)/2**Gene.n + Gene.weight_min )
         return np.array(vals)
+```
+
+Here is a quick diagram showing what the code is doing above. The Gene object is responsible for holding a representation of the weights of the model in an "allele" like format which is structured here as a binary list of 1 and 0s with a specified length based on the amount of variables and precision specified. The reason why we store our weights in this format is to have an easy representation for comparing and breeding between two different Gene objects representing different weights. The numpy_values functions provides a mapping between the allele format stored internally and creating the float representation used in the matrix calculation at runtime to calculate the decision from the game state. This function takes the alleles that were initialized for the amount of inputs and outputs and hidden size of the model and will output the proper floating decimal numbers that will represent the A, B, C, D matrix values.
+![Gene Binary Structure](./genestructure.jpeg)
+
+## What is a population?
+A population is just a set of chromosomes that are bred to produce the next generation. We use the Generation class in our project to manage the population of genes. Below I show the code, where we have an init function that could have genes specified or not. If genes is not specified, we randomly generate a population of genes with a size of the specified parameter initial_population. If it is then we just create this generation with the specified gene objects (usually produced from a subsequent breeding of last generation). The point of this class is to keep track of a lot of gene objects in relation to each other while tracking their fitness so that we can reproduce them into subsequent generations.
+How is it initialized?
+```
+"""
+The Generation class contains a class used keep track of the current generation of the training sequence of paddles. 
+The Generation class assumes that you setup the training conditions such that you have one large right paddle that fills up the screen.
+
+
+Params:
+    initial_population (int) - the starting size of your generation 1 paddles
+
+"""
+class Generation(object):
+    def __init__(self, initial_population, right_paddle, screen):
+        self.P = initial_population
+        self.right_paddle = right_paddle
+        self.screen = screen
+        self.generation = 0
+        self.init()
+
+    def init(self, genes=None):
+        self.train_paddles = []
+        self.dead = False
+        self.generation += 1
+        if genes:
+            for i in range(len(genes)):
+                color = [100, 100, 100]
+                mod = i%3
+                color[mod] = i % 255
+                a = Train(color, self.screen,SPACING,HEIGHT/2,P_LENGTH,P_WIDTH,'two',P_SPEED, gene=genes[i])
+                a.one = self.right_paddle
+                self.train_paddles.append(a)
+        else:
+            for i in range(self.P):
+                color = [100, 100, 100]
+                mod = i%3
+                color[mod] = i % 255
+                a = Train(color, self.screen,SPACING,HEIGHT/2,P_LENGTH,P_WIDTH,'two',P_SPEED)
+                a.one = self.right_paddle
+                self.train_paddles.append(a)
+```
+
+Here is the Train object that is being referenced here which instantiantes a pong paddle with its own ball for training. The training scenario includes many independent paddles battling against a wall on the right side which would bounce the ball back at a random angle. The goal of the gene/train function is to try to hit back the ball as many times against this random wall as possible, being counted by the Generation module.
+```
+"""
+The train class is a class that represents an instance of the paddles used in the training sequence.
+The argument to look closely at in the context of the algorithim is the gene Variable which will contain
+the information that represents the behavior of that paddle.
+"""
+class Train(object):
+    def __init__(self, color, screen,x,y,length,width,player,speed, gene=None):
+        self.color = color
+        self.paddle = paddle(screen,x,y,length,width,player,speed)
+        self.ball = Ball(screen,WIDTH/2,HEIGHT/2,20,-5,random.choice([-5, 5]), color)
+        self.dead = False
+        self.fitness = 0
+        if gene:
+            self.g = gene
+            self.F = self.g.numpy_values()
+            self.A, self.B, self.C, self.D = format_weight_array(self.F)
+        else:
+            self.g = Gene()
+            self.F = self.g.numpy_values()
+            self.A, self.B, self.C, self.D = format_weight_array(self.F)
+
+    def move(self, decision):
+        if decision > 0.1:
+            self.paddle._move_up()
+        elif decision < -0.1:
+            self.paddle._move_down()
+        self.paddle._draw(color=self.color)
+
+    def on_update(self):
+        if self.dead:
+            return
+        self.ball.move()
+        if (self.ball.x <= 0 or self.ball.x+self.ball.size/2 >= WIDTH):
+            self.dead = True
+            return
+        if self.check_collision(self.paddle):
+            self.fitness += 1
+        self.check_collision(self.one, train=True)
+        X = prepare_features(self.ball.x_speed, self.ball.y_speed, self.ball.y, self.paddle.y)
+        self.move(nn(self.A, self.B, self.C, self.D, X))
+
+    def check_collision(self, paddle, train=False):
+        if self.ball.collide(pygame.Rect(paddle.x, paddle.y, paddle.width, paddle.length)):
+            self.ball.bounce(MAXSPEED,MAXBOUNCEANGLE, paddle, train=train)
+            return True
+        return False
+
+def prepare_features(ball_dx, ball_dy, y_ball, y_paddle):
+    return np.array([ball_dy/MAXSPEED, ball_dx/MAXSPEED, (y_ball-y_paddle)/HEIGHT, y_paddle/HEIGHT])
+```
+
+## What is a fitness function?
+The fitness function takes in a chromosome and returns a value which is used to determine how likely it is for that chromosome to be reproduced into the next generation. The higher the value, the more likely it will be selected as a parent. Here the fitness was counted by the training function for each gene which would count how many times the paddle would successfully hit the ball back towards the wall on the right. The fitness value is updated here in the Train class:
+```
+class Train(object):
+    ...
+    def on_update(self):
+        if self.dead:
+            return
+        self.ball.move()
+        if (self.ball.x <= 0 or self.ball.x+self.ball.size/2 >= WIDTH):
+            self.dead = True
+            return
+        if self.check_collision(self.paddle):
+            self.fitness += 1 <--------------
+        self.check_collision(self.one, train=True)
+        X = prepare_features(self.ball.x_speed, self.ball.y_speed, self.ball.y, self.paddle.y)
+        self.move(nn(self.A, self.B, self.C, self.D, X))
+```
+
+## What is a selection function?
+The selection function takes in a population and returns a subset of the population which are the parents of the next generation. It is up to you how you implement this but we recommend using a tournament selection with elitism to select the best chromosomes from the previous generation. This would let a generation of Train classes of many different genes run for as long as until the last paddle dies (ball falls through it) or until many of the paddles reach the maximum fitness score of 40. Once we reach the end, we simply choose the top genes from the pool with the highest fitness and breed those into the next generation. Here is the code in the Generation class that handles the selection of the genes into the subsequent generations:
+```
+class Generation(object):
+    ...
+    # this method returns a new generation of those who had the best fitness of the dead paddles
+    # it choses the highest two fitness scores and crossbreeds these two
+    def selection(self):
+        if not self.dead:
+            return
+        new_generation = []
+        fitness = [(i, paddle.fitness) for i, paddle in enumerate(self.train_paddles)]
+        fitness = sorted(fitness, key=lambda x: x[1])
+        top_n_n = 40
+        fit_list = fitness[-top_n_n:]
+        random.shuffle(fit_list)
+        top_n = top_n_n//2
+        for i in range(top_n):
+            myself = self.train_paddles[fit_list.pop()[0]].g
+            mate = self.train_paddles[fit_list.pop()[0]].g
+            son = myself.crossover(mate, n_children=20) # woah calm down there assuming genders
+            new_generation += son
+        self.init(genes=new_generation)
+
+```
+
+## What is a crossover function?
+The crossover function takes in two parent chromosomes and returns two child chromosomes. The parents are selected by the selection function, so you can use any method to select them.
+Here is the code describing the crossover function:
+```
+class Gene(object):
+    ...
+    def _crossover(self, other):
+        alleles = []
+        for i in range(Gene.var*Gene.n):
+            if random.randint(0, 1) > 0:
+                alleles.append(self.alleles[i])
+            else:
+                alleles.append(other.alleles[i])
+        alleles = self._mutate(alleles)
+        return Gene(alleles=alleles)
+
+    #returns list of children (Gene object)
+    # crossover will create crossover with the self and other for a total of n_children times 
+    # returns a list of Genes in size n_children
+    def crossover(self, other, n_children=50):
+        lst = []
+        for i in range(n_children):
+            lst.append(self._crossover(other))
+        return lst
+
+```
+Here is a diagram describing the crossover logic in the function above on how two parent genes crossover to form a child gene:
+
+![crossover function](crossover.jpeg)
+
+
+## What is a mutation function?
+The mutation function takes in a chromosome and returns a new chromosome which is a mutated version of the original one. This is used above in the crossover to introduce some randomness during breeding which allows for more exploration during training.
+Here is the code:
+```
+class Gene(object):
+    ...
+    # default chance of mutation is 1%
+    def _mutate(self, alleles, chance=0.01):
+        new_alleles = []
+        for i in range(Gene.var*Gene.n):
+            if random.random() < chance and i % Gene.n != 0:
+                stored = new_alleles.pop()
+                new_alleles.append(alleles[i])
+                new_alleles.append(stored)
+            else:
+                new_alleles.append(alleles[i])
+        return new_alleles
 ```

@@ -2,6 +2,14 @@ a {
     color: #003a8c;
 }
 
+p {
+    font-size: 1.15em;
+}
+
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu";
+}
+
+li {
+    font-size: 1.15em;
 }
