@@ -5,7 +5,7 @@ module.exports = {
     title: `Artur Kashperskiy`,
     author: `Artur Kashperskiy`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://sm5art.github.io/`,
     social: {
       twitter: `kylemathews`,
     },

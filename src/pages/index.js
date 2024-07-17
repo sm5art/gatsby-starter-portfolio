@@ -1,12 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { Layout } from 'antd';
+import {
+  GithubOutline,
+  LinkedinOutline,
+} from '@ant-design/icons';
 
 import Head, { SCROLL_OFFSET } from '../components/landing/header';
 import Jumbotron from '../components/landing/jumbotron';
 import About from '../components/landing/about';
 import Blogs from '../components/landing/blogs';
 import Experience from '../components/landing/experience';
+import GithubRepositories from '../components/landing/githubRepositories';
 import SEO from '../components/landing/seo';
 
 import indexStyles from './styles/index.module.css';
@@ -15,6 +20,8 @@ import { rhythm } from '../utils/typography';
 import { theme, author, description } from '../utils/constants';
 import { sleep, repeat } from '../utils/promise';
 import { setMobile } from '../utils/mobile';
+import { renderIconDefinitionToSVGElement } from '@ant-design/icons/lib/helpers';
+
 
 const { Header, Footer, Content } = Layout;
 const HEADER_PADDING = 0.5;
@@ -85,6 +92,9 @@ class BlogIndex extends React.Component {
         else if (event.keyCode == '3'.charCodeAt(0)) {
           window.scrollTo(0, this.experienceRef.offsetTop+SCROLL_OFFSET);
         }
+        else if (event.keyCode == '4'.charCodeAt(0)) {
+          window.scrollTo(0, this.githubRef.offsetTop+SCROLL_OFFSET);
+        }
     };
     document.addEventListener("keypress", this.func)
   }
@@ -93,6 +103,14 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
+    const githubHTMLString = renderIconDefinitionToSVGElement(
+      GithubOutline,
+      { extraSVGAttrs: { width: '2em', height: '2em' } }
+    );
+    const linkedinHTMLString = renderIconDefinitionToSVGElement(
+      LinkedinOutline,
+      { extraSVGAttrs: { width: '2em', height: '2em' } }
+    );
     return (
       <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
         <SEO
@@ -104,7 +122,7 @@ class BlogIndex extends React.Component {
               }]}
             />
         <Header style={{position: 'fixed', zIndex: 1, width:'99vw', paddingLeft: rhythm(HEADER_PADDING), paddingRight: rhythm(HEADER_PADDING), background: "inherit"}}>
-          <Head refs={[this.aboutRef, this.experienceRef, this.blogsRef]}/>
+          <Head refs={[this.aboutRef, this.experienceRef, this.blogsRef, this.githubRef]}/>
         </Header>
           <Layout style={{background: "inherit"}}>
             <Content style={{marginTop: rhythm(3), marginLeft:'auto', marginRight:'auto', maxWidth: rhythm(CONTENT_MAX_WIDTH)}}>
@@ -112,6 +130,7 @@ class BlogIndex extends React.Component {
               <Blogs refCallback={(ref) => this.blogsRef=ref}/>
               <About refCallback={(ref) => this.aboutRef=ref}/>
               <Experience refCallback={(ref) => this.experienceRef=ref}/>
+              <GithubRepositories refCallback={(ref) => this.githubRef=ref}/>
               <Footer style={{background: "inherit"}}>
           <footer>
             © {new Date().getFullYear()}, Built with
@@ -119,6 +138,10 @@ class BlogIndex extends React.Component {
             <a href="https://www.gatsbyjs.org">Gatsby</a>
             {" and ❤️"}
           </footer>
+          <div>
+            <a href="https://www.linkedin.com/in/artur-kashperskiy-9171ab11a/"><span dangerouslySetInnerHTML={{ __html: linkedinHTMLString }} /></a>
+            <a style={{marginLeft:'2px'}} href="https://github.com/sm5art"><span dangerouslySetInnerHTML={{ __html: githubHTMLString }} /></a>
+          </div>
         </Footer>
            </Content>
           </Layout>

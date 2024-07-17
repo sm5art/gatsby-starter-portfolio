@@ -61,6 +61,7 @@ const FullWidthHeader = ({refs}) => {
             <HeaderLink reference={refs[2]} index={1} text={"blog"}/>
             <HeaderLink reference={refs[0]} index={2} text={"about"}/>
             <HeaderLink reference={refs[1]} index={3} text={"experience"}/>
+            <HeaderLink reference={refs[3]} index={4} text={"github"}/>
             <CVButton/>
     </div>
 );
@@ -110,6 +111,9 @@ class HalfWidthHeader extends React.Component {
                 </Row>
                 <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
                 <HeaderLink extraFunc={this.extra} reference={refs[1]} index={3} text={"experience"}/>
+                </Row>
+                <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
+                <HeaderLink extraFunc={this.extra} reference={refs[3]} index={4} text={"github"}/>
                 </Row>
               <Row style={{marginTop: rhythm(MOBILE_DRAWER_RYTHYM)}} type="flex" justify="start">
                 <CVButton/>
