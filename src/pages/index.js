@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import {
   GithubOutline,
   LinkedinOutline,
+  YoutubeOutline
 } from '@ant-design/icons';
 
 import Head, { SCROLL_OFFSET } from '../components/landing/header';
@@ -111,6 +112,10 @@ class BlogIndex extends React.Component {
       LinkedinOutline,
       { extraSVGAttrs: { width: '2em', height: '2em' } }
     );
+    const ytHTMLString = renderIconDefinitionToSVGElement(
+      YoutubeOutline,
+      { extraSVGAttrs: { width: '2em', height: '2em' } }
+    );
     return (
       <Layout style={{background: this.state.backgroundColor}} className={indexStyles.container}>
         <SEO
@@ -131,7 +136,7 @@ class BlogIndex extends React.Component {
               <About refCallback={(ref) => this.aboutRef=ref}/>
               <Experience refCallback={(ref) => this.experienceRef=ref}/>
               <GithubRepositories refCallback={(ref) => this.githubRef=ref}/>
-              <Footer style={{background: "inherit"}}>
+        <Footer style={{background: "inherit", textAlign: 'center'}}>
           <footer>
             © {new Date().getFullYear()}, Built with
             {" "}
@@ -141,6 +146,8 @@ class BlogIndex extends React.Component {
           <div>
             <a href="https://www.linkedin.com/in/artur-kashperskiy-9171ab11a/"><span dangerouslySetInnerHTML={{ __html: linkedinHTMLString }} /></a>
             <a style={{marginLeft:'2px'}} href="https://github.com/sm5art"><span dangerouslySetInnerHTML={{ __html: githubHTMLString }} /></a>
+            <a style={{marginLeft:'2px'}} href="https://www.youtube.com/@AwesomeMinecraftSauc"><span dangerouslySetInnerHTML={{ __html: ytHTMLString }} /></a>
+
           </div>
         </Footer>
            </Content>
