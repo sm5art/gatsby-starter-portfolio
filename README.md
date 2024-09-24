@@ -14,7 +14,7 @@ cd my-blog-starter
 install gatsby cli
 
 ```
-npm install -g gatsby-cli
+npm install -g gatsby-cli@2.19.3
 ```
 
 install project dependencies
