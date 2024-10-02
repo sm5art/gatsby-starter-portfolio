@@ -1,7 +1,7 @@
 ---
-title: Machine Playing Pong Unsupervised with Genetic Algorithims 🧬
+title: Machine Playing Pong Unsupervised with Genetic Algorithms 🧬
 date: "2024-06-24T22:40:32.169Z"
-description: "Building an unsupervised genetic learning algorithim that learns to play pong in 15 minutes in Python."
+description: "Building an unsupervised genetic learning algorithm that learns to play pong like atari in 15 minutes in Python."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mFOKdGye7vY?si=sZ30L3uJBAeZhTZl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -428,3 +428,9 @@ class Gene(object):
                 new_alleles.append(alleles[i])
         return new_alleles
 ```
+
+# References
+
+1. https://github.com/Sarthak-Rijal/goodpong 
+2. https://en.wikipedia.org/wiki/Genetic_algorithm 
+3. https://www.geeksforgeeks.org/genetic-algorithms/
